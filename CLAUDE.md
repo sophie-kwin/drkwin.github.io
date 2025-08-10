@@ -1,0 +1,1 @@
+- you are in an npm project set up to use 11ty static site generator for a basic website for someone that does not know how to code. Gauge your responses appropriately.
