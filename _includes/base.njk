@@ -281,7 +281,7 @@
             font-family: 'Times New Roman', 'Georgia', 'Playfair Display', serif;
             font-size: 1.75rem;
             font-weight: 400;
-            color: #7585b9;
+            color: #5a6ba8;
             text-decoration: none;
             letter-spacing: -0.015em;
         }
@@ -322,15 +322,83 @@
         .search-btn {
             background: none;
             border: none;
-            font-size: 1.2rem;
             cursor: pointer;
             color: #83573d;
             transition: color 0.2s ease;
             padding: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         
         .search-btn:hover {
             color: #7585b9;
+        }
+        
+        .search-btn svg {
+            stroke: currentColor;
+        }
+        
+        /* Shopping Bag Icon */
+        .shop-container {
+            position: relative;
+        }
+        
+        .shop-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: #83573d;
+            transition: color 0.2s ease;
+            padding: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+        
+        .shop-btn:hover {
+            color: #7585b9;
+        }
+        
+        .shop-btn svg {
+            stroke: currentColor;
+        }
+        
+        /* Footer Social Links */
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .social-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #a0aec0;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s ease;
+        }
+        
+        .social-link:hover {
+            color: #dbb599;
+        }
+        
+        .social-link svg {
+            stroke: currentColor;
+        }
+        
+        .social-link span {
+            font-weight: 500;
         }
         
         .search-dropdown {
@@ -470,56 +538,141 @@
         /* Resource Card Styling */
         .resource-categories .card {
             transition: all 0.3s ease;
+            aspect-ratio: 1;
+            display: flex;
+            flex-direction: column;
+            border-radius: 16px;
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+        
+        .resource-categories .card-image {
+            display: none;
+        }
+        
+        .resource-categories .card-content {
+            padding: 2rem;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .resource-categories .card-meta {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        
+        .resource-categories h3 {
+            font-size: 1.5rem;
+            margin: 0 0 1rem 0;
+            line-height: 1.2;
+        }
+        
+        .resource-categories p {
+            font-size: 0.9rem;
+            line-height: 1.4;
+            margin: 0;
         }
         
         .resource-card.free-guides {
-            border-top: 4px solid #9fd4fa;
+            background: #9fd4fa;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .resource-card.free-guides .card-meta {
+            color: rgba(255, 255, 255, 0.8);
         }
         
         .resource-card.free-guides:hover {
-            box-shadow: 0 8px 25px rgba(159, 212, 250, 0.2);
+            background: #dbb599;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(219, 181, 153, 0.3);
         }
         
         .resource-card.premium-guides {
-            border-top: 4px solid #7585b9;
+            background: #b8d1f5;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .resource-card.premium-guides .card-meta {
+            color: rgba(255, 255, 255, 0.8);
         }
         
         .resource-card.premium-guides:hover {
-            box-shadow: 0 8px 25px rgba(117, 133, 185, 0.2);
+            background: #83573d;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(131, 87, 61, 0.3);
         }
         
         .resource-card.educational {
-            border-top: 4px solid #dbb599;
+            background: #7fb5f0;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .resource-card.educational .card-meta {
+            color: rgba(255, 255, 255, 0.8);
         }
         
         .resource-card.educational:hover {
-            box-shadow: 0 8px 25px rgba(219, 181, 153, 0.2);
+            background: #d4a684;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(212, 166, 132, 0.3);
         }
         
         .resource-card.recommended-products {
-            border-top: 4px solid #83573d;
+            background: #6ba5eb;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .resource-card.recommended-products .card-meta {
+            color: rgba(255, 255, 255, 0.8);
         }
         
         .resource-card.recommended-products:hover {
-            box-shadow: 0 8px 25px rgba(131, 87, 61, 0.2);
+            background: #c29d7a;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(194, 157, 122, 0.3);
         }
         
         .resource-card.affiliate-links {
-            border-top: 4px solid #9fd4fa;
-            border-left: 2px solid #7585b9;
+            background: linear-gradient(135deg, #5a9ae6 0%, #7fb5f0 100%);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .resource-card.affiliate-links .card-meta {
+            color: rgba(255, 255, 255, 0.8);
         }
         
         .resource-card.affiliate-links:hover {
-            box-shadow: 0 8px 25px rgba(159, 212, 250, 0.15);
+            background: linear-gradient(135deg, #dbb599 0%, #83573d 100%);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(219, 181, 153, 0.3);
         }
         
         .resource-card.coming-soon {
-            border-top: 4px solid #e2e8f0;
-            opacity: 0.7;
+            background: #ffffff;
+            border: 2px solid #e2e8f0;
+            color: #83573d;
+        }
+        
+        .resource-card.coming-soon .card-meta {
+            color: #a0aec0;
         }
         
         .resource-card.coming-soon:hover {
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
         }
         
         @media (max-width: 768px) {
@@ -588,12 +741,6 @@
             <ul class="nav-links">
                 <li><a href="/">Home</a></li>
                 <li><a href="/about/">About</a></li>
-                <li class="search-container">
-                    <button class="search-btn" onclick="toggleSearch()">🔍</button>
-                    <div class="search-dropdown">
-                        <input type="text" placeholder="Search..." class="search-input">
-                    </div>
-                </li>
                 <li><a href="/philosophy/">Philosophy</a></li>
                 <li><a href="/services/">Services</a></li>
                 <li class="dropdown">
@@ -638,16 +785,35 @@
                         <div class="dropdown-item" data-category="affiliate-links">
                             <a href="/resources/affiliate-links/">Affiliate Links</a>
                             <div class="flyout-menu">
-                                <a href="/resources/affiliate-links/trusted-brands/">Trusted Brands</a>
-                                <a href="/resources/affiliate-links/lab-testing/">Lab Testing</a>
-                                <a href="/resources/affiliate-links/fitness-equipment/">Fitness Equipment</a>
-                                <a href="/resources/affiliate-links/wellness-apps/">Wellness Apps</a>
+                                <a href="https://marekdiagnostics.com/drkwin" target="_blank" rel="noopener noreferrer">Lab Testing - Marek Health (use code drkwin)</a>
+                                <a href="https://us.fullscript.com/welcome/skwin" target="_blank" rel="noopener noreferrer">FullScript Supplements</a>
+                                <a href="https://www.amazon.com/shop/influencer-ab319d4b" target="_blank" rel="noopener noreferrer">Amazon Storefront</a>
                             </div>
                         </div>
                     </div>
                 </li>
                 <li><a href="/bookings/">Bookings</a></li>
                 <li><a href="/contact/">Contact</a></li>
+                <li class="search-container">
+                    <button class="search-btn" onclick="toggleSearch()">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                    <div class="search-dropdown">
+                        <input type="text" placeholder="Search..." class="search-input">
+                    </div>
+                </li>
+                <li class="shop-container">
+                    <a href="/resources/premium-guides/" class="shop-btn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <path d="M16 10a4 4 0 0 1-8 0"></path>
+                        </svg>
+                    </a>
+                </li>
             </ul>
             <button class="mobile-menu" onclick="toggleMenu()">☰</button>
         </div>
@@ -669,7 +835,27 @@
     
     <footer>
         <div class="container">
-            <p>&copy; 2024 Sophie's Website. Built with 11ty.</p>
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/sophia-kwin" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://www.instagram.com/sophie.kwin/" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="m16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                        <span>Instagram</span>
+                    </a>
+                </div>
+                <p>&copy; 2024 Sophie's Website. Built with 11ty.</p>
+            </div>
         </div>
     </footer>
     
