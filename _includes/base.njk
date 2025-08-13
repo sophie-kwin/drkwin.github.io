@@ -314,6 +314,214 @@
             color: #83573d;
         }
         
+        /* Search Functionality */
+        .search-container {
+            position: relative;
+        }
+        
+        .search-btn {
+            background: none;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            color: #83573d;
+            transition: color 0.2s ease;
+            padding: 0.5rem;
+        }
+        
+        .search-btn:hover {
+            color: #7585b9;
+        }
+        
+        .search-dropdown {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+            min-width: 250px;
+            display: none;
+            z-index: 1000;
+        }
+        
+        .search-dropdown.active {
+            display: block;
+        }
+        
+        .search-input {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            outline: none;
+        }
+        
+        .search-input:focus {
+            border-color: #7585b9;
+        }
+        
+        /* Dropdown Menu Styles */
+        .dropdown {
+            position: relative;
+        }
+        
+        .dropdown-toggle {
+            position: relative;
+        }
+        
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            padding: 0.5rem 0;
+            min-width: 200px;
+            display: none;
+            z-index: 1000;
+        }
+        
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        
+        .dropdown-item {
+            position: relative;
+        }
+        
+        .dropdown-item > a {
+            display: block;
+            padding: 0.75rem 1.5rem;
+            color: #83573d;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            border-left: 3px solid transparent;
+        }
+        
+        .dropdown-item > a:hover {
+            background: #f8fafc;
+            color: #7585b9;
+            border-left-color: #9fd4fa;
+        }
+        
+        /* Flyout Menu Styles */
+        .flyout-menu {
+            position: absolute;
+            top: 0;
+            left: 100%;
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            padding: 0.5rem 0;
+            min-width: 250px;
+            display: none;
+            z-index: 1001;
+        }
+        
+        .dropdown-item:hover .flyout-menu {
+            display: block;
+        }
+        
+        .flyout-menu a {
+            display: block;
+            padding: 0.5rem 1.5rem;
+            color: #4a5568;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+            border-left: 3px solid transparent;
+        }
+        
+        .flyout-menu a:hover {
+            background: #f8fafc;
+            color: #7585b9;
+            border-left-color: #dbb599;
+        }
+        
+        /* Resource Category Colors */
+        .dropdown-item[data-category="free-guides"] > a:hover {
+            border-left-color: #9fd4fa;
+        }
+        
+        .dropdown-item[data-category="premium-guides"] > a:hover {
+            border-left-color: #7585b9;
+        }
+        
+        .dropdown-item[data-category="educational"] > a:hover {
+            border-left-color: #dbb599;
+        }
+        
+        .dropdown-item[data-category="recommended-products"] > a:hover {
+            border-left-color: #83573d;
+        }
+        
+        .dropdown-item[data-category="affiliate-links"] > a:hover {
+            border-left-color: #9fd4fa;
+        }
+        
+        /* Resource Card Styling */
+        .resource-categories .card {
+            transition: all 0.3s ease;
+        }
+        
+        .resource-card.free-guides {
+            border-top: 4px solid #9fd4fa;
+        }
+        
+        .resource-card.free-guides:hover {
+            box-shadow: 0 8px 25px rgba(159, 212, 250, 0.2);
+        }
+        
+        .resource-card.premium-guides {
+            border-top: 4px solid #7585b9;
+        }
+        
+        .resource-card.premium-guides:hover {
+            box-shadow: 0 8px 25px rgba(117, 133, 185, 0.2);
+        }
+        
+        .resource-card.educational {
+            border-top: 4px solid #dbb599;
+        }
+        
+        .resource-card.educational:hover {
+            box-shadow: 0 8px 25px rgba(219, 181, 153, 0.2);
+        }
+        
+        .resource-card.recommended-products {
+            border-top: 4px solid #83573d;
+        }
+        
+        .resource-card.recommended-products:hover {
+            box-shadow: 0 8px 25px rgba(131, 87, 61, 0.2);
+        }
+        
+        .resource-card.affiliate-links {
+            border-top: 4px solid #9fd4fa;
+            border-left: 2px solid #7585b9;
+        }
+        
+        .resource-card.affiliate-links:hover {
+            box-shadow: 0 8px 25px rgba(159, 212, 250, 0.15);
+        }
+        
+        .resource-card.coming-soon {
+            border-top: 4px solid #e2e8f0;
+            opacity: 0.7;
+        }
+        
+        .resource-card.coming-soon:hover {
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+        }
+        
         @media (max-width: 768px) {
             h1 {
                 font-size: 2.5rem;
@@ -380,8 +588,64 @@
             <ul class="nav-links">
                 <li><a href="/">Home</a></li>
                 <li><a href="/about/">About</a></li>
+                <li class="search-container">
+                    <button class="search-btn" onclick="toggleSearch()">🔍</button>
+                    <div class="search-dropdown">
+                        <input type="text" placeholder="Search..." class="search-input">
+                    </div>
+                </li>
                 <li><a href="/philosophy/">Philosophy</a></li>
                 <li><a href="/services/">Services</a></li>
+                <li class="dropdown">
+                    <a href="/resources/" class="dropdown-toggle">Resources</a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-item" data-category="free-guides">
+                            <a href="/resources/free-guides/">Free Guides</a>
+                            <div class="flyout-menu">
+                                <a href="/resources/free-guides/sleep-guide/">Sleep Guide</a>
+                                <a href="/resources/free-guides/grocery-shopping-list/">Grocery Shopping List</a>
+                                <a href="/resources/free-guides/protein-sources/">Protein Sources</a>
+                                <a href="/resources/free-guides/time-prioritization/">Time Prioritization</a>
+                            </div>
+                        </div>
+                        <div class="dropdown-item" data-category="premium-guides">
+                            <a href="/resources/premium-guides/">Premium Guides</a>
+                            <div class="flyout-menu">
+                                <a href="/resources/premium-guides/comprehensive-health-audit/">Comprehensive Health Audit</a>
+                                <a href="/resources/premium-guides/hormone-optimization-guide/">Hormone Optimization Guide</a>
+                                <a href="/resources/premium-guides/longevity-blueprint/">Longevity Blueprint</a>
+                                <a href="/resources/premium-guides/performance-protocol/">Performance Protocol</a>
+                            </div>
+                        </div>
+                        <div class="dropdown-item" data-category="educational">
+                            <a href="/resources/educational/">Educational</a>
+                            <div class="flyout-menu">
+                                <a href="/resources/educational/what-are-nds/">What are NDs (and what aren't we)</a>
+                                <a href="/resources/educational/holistic-vs-natural/">Holistic vs Natural</a>
+                                <a href="/resources/educational/what-is-detoxification/">What is detoxification? (and what isn't it)</a>
+                                <a href="/resources/educational/understanding-biomarkers/">Understanding Biomarkers</a>
+                            </div>
+                        </div>
+                        <div class="dropdown-item" data-category="recommended-products">
+                            <a href="/resources/recommended-products/">Recommended Products</a>
+                            <div class="flyout-menu">
+                                <a href="/resources/recommended-products/supplements/">Supplements</a>
+                                <a href="/resources/recommended-products/testing-kits/">Testing Kits</a>
+                                <a href="/resources/recommended-products/wellness-devices/">Wellness Devices</a>
+                                <a href="/resources/recommended-products/books/">Books</a>
+                            </div>
+                        </div>
+                        <div class="dropdown-item" data-category="affiliate-links">
+                            <a href="/resources/affiliate-links/">Affiliate Links</a>
+                            <div class="flyout-menu">
+                                <a href="/resources/affiliate-links/trusted-brands/">Trusted Brands</a>
+                                <a href="/resources/affiliate-links/lab-testing/">Lab Testing</a>
+                                <a href="/resources/affiliate-links/fitness-equipment/">Fitness Equipment</a>
+                                <a href="/resources/affiliate-links/wellness-apps/">Wellness Apps</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
                 <li><a href="/bookings/">Bookings</a></li>
                 <li><a href="/contact/">Contact</a></li>
             </ul>
@@ -414,6 +678,42 @@
             const navLinks = document.querySelector('.nav-links');
             navLinks.classList.toggle('active');
         }
+        
+        function toggleSearch() {
+            const searchDropdown = document.querySelector('.search-dropdown');
+            searchDropdown.classList.toggle('active');
+            if (searchDropdown.classList.contains('active')) {
+                setTimeout(() => {
+                    document.querySelector('.search-input').focus();
+                }, 100);
+            }
+        }
+        
+        // Close search dropdown when clicking outside
+        document.addEventListener('click', function(event) {
+            const searchContainer = document.querySelector('.search-container');
+            const searchDropdown = document.querySelector('.search-dropdown');
+            
+            if (!searchContainer.contains(event.target)) {
+                searchDropdown.classList.remove('active');
+            }
+        });
+        
+        // Simple search functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.querySelector('.search-input');
+            if (searchInput) {
+                searchInput.addEventListener('keypress', function(e) {
+                    if (e.key === 'Enter') {
+                        const query = this.value.trim();
+                        if (query) {
+                            // Simple search - redirect to Google site search for now
+                            window.open(`https://www.google.com/search?q=site:${window.location.hostname} ${encodeURIComponent(query)}`, '_blank');
+                        }
+                    }
+                });
+            }
+        });
     </script>
 </body>
 </html>
