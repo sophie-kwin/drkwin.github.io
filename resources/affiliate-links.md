@@ -79,5 +79,5 @@ Supporting my practice through these partnerships allows me to continue providin
 <div class="cta-section">
   <h2>Questions About Products or Services?</h2>
   <p>Get personalized recommendations and guidance on the best options for your needs</p>
-  <a href="/bookings/" class="btn">Schedule Consultation</a>
+  <a href="/contact/" class="btn">Get In Touch</a>
 </div>

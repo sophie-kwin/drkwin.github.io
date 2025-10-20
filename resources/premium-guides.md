@@ -12,11 +12,10 @@ Advanced, comprehensive resources for individuals serious about optimizing their
 
 </div>
 
-<div class="content-grid">
+<div class="content-grid resource-categories">
 
-  <div class="card resource-card premium-guides">
+  <div class="card resource-card free-guides">
     <a href="/resources/premium-guides/comprehensive-health-audit/" style="text-decoration: none; color: inherit;">
-      <div class="card-image">🔍</div>
       <div class="card-content">
         <div class="card-meta">Assessment</div>
         <h3>Comprehensive Health Audit</h3>
@@ -27,7 +26,6 @@ Advanced, comprehensive resources for individuals serious about optimizing their
 
   <div class="card resource-card premium-guides">
     <a href="/resources/premium-guides/hormone-optimization-guide/" style="text-decoration: none; color: inherit;">
-      <div class="card-image">⚖️</div>
       <div class="card-content">
         <div class="card-meta">Endocrine Health</div>
         <h3>Hormone Optimization Guide</h3>
@@ -36,9 +34,8 @@ Advanced, comprehensive resources for individuals serious about optimizing their
     </a>
   </div>
 
-  <div class="card resource-card premium-guides">
+  <div class="card resource-card educational">
     <a href="/resources/premium-guides/longevity-blueprint/" style="text-decoration: none; color: inherit;">
-      <div class="card-image">🧬</div>
       <div class="card-content">
         <div class="card-meta">Anti-Aging</div>
         <h3>Longevity Blueprint</h3>
@@ -47,9 +44,8 @@ Advanced, comprehensive resources for individuals serious about optimizing their
     </a>
   </div>
 
-  <div class="card resource-card premium-guides">
+  <div class="card resource-card recommended-products">
     <a href="/resources/premium-guides/performance-protocol/" style="text-decoration: none; color: inherit;">
-      <div class="card-image">🏃‍♀️</div>
       <div class="card-content">
         <div class="card-meta">Athletic Performance</div>
         <h3>Performance Protocol</h3>
@@ -78,5 +74,5 @@ Premium guides provide professional-level depth and detail:
 <div class="cta-section">
   <h2>Want Personalized Implementation?</h2>
   <p>Get professional guidance to implement these protocols effectively</p>
-  <a href="/bookings/" class="btn">Schedule Consultation</a>
+  <a href="/contact/" class="btn">Get In Touch</a>
 </div>

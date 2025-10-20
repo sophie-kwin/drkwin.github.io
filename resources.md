@@ -1,6 +1,6 @@
 ---
 layout: base
-title: Resources - Dr. Sophie Kwin, ND
+title: Resources
 subtitle: Evidence-based tools and guides to support your health journey.
 ---
 
@@ -33,7 +33,7 @@ Access carefully curated guides, educational content, and recommended products t
       </div>
     </a>
   </div>
-
+ 
   <div class="card resource-card educational">
     <a href="/resources/educational/" style="text-decoration: none; color: inherit;">
       <div class="card-content">
@@ -64,14 +64,14 @@ Access carefully curated guides, educational content, and recommended products t
     </a>
   </div>
 
-  <div class="card resource-card coming-soon">
-    <div style="text-decoration: none; color: inherit; cursor: default;">
+  <div class="card resource-card educational">
+    <a href="/resources/my-health-blueprint/" style="text-decoration: none; color: inherit;">
       <div class="card-content">
-        <div class="card-meta">Coming Soon</div>
-        <h3>More Resources</h3>
-        <p>Additional tools and interactive content in development</p>
+        <div class="card-meta">Blueprint</div>
+        <h3>My Health Blueprint</h3>
+        <p>Comprehensive framework for understanding and optimizing your health</p>
       </div>
-    </div>
+    </a>
   </div>
 
 </div>
@@ -79,5 +79,5 @@ Access carefully curated guides, educational content, and recommended products t
 <div class="cta-section">
   <h2>Need Personalized Guidance?</h2>
   <p>While these resources provide valuable information, nothing replaces personalized care</p>
-  <a href="/bookings/" class="btn">Schedule Consultation</a>
+  <a href="/contact/" class="btn">Get In Touch</a>
 </div>

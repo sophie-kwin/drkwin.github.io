@@ -12,11 +12,10 @@ Access these complimentary resources designed to provide you with foundational k
 
 </div>
 
-<div class="content-grid">
+<div class="content-grid resource-categories">
 
   <div class="card resource-card free-guides">
     <a href="/resources/free-guides/sleep-guide/" style="text-decoration: none; color: inherit;">
-      <div class="card-image">😴</div>
       <div class="card-content">
         <div class="card-meta">Sleep Optimization</div>
         <h3>Sleep Guide</h3>
@@ -25,9 +24,8 @@ Access these complimentary resources designed to provide you with foundational k
     </a>
   </div>
 
-  <div class="card resource-card free-guides">
+  <div class="card resource-card premium-guides">
     <a href="/resources/free-guides/grocery-shopping-list/" style="text-decoration: none; color: inherit;">
-      <div class="card-image">🛒</div>
       <div class="card-content">
         <div class="card-meta">Nutrition</div>
         <h3>Grocery Shopping List</h3>
@@ -36,9 +34,8 @@ Access these complimentary resources designed to provide you with foundational k
     </a>
   </div>
 
-  <div class="card resource-card free-guides">
+  <div class="card resource-card educational">
     <a href="/resources/free-guides/protein-sources/" style="text-decoration: none; color: inherit;">
-      <div class="card-image">🥩</div>
       <div class="card-content">
         <div class="card-meta">Macronutrients</div>
         <h3>Protein Sources</h3>
@@ -47,13 +44,22 @@ Access these complimentary resources designed to provide you with foundational k
     </a>
   </div>
 
-  <div class="card resource-card free-guides">
+  <div class="card resource-card recommended-products">
     <a href="/resources/free-guides/time-prioritization/" style="text-decoration: none; color: inherit;">
-      <div class="card-image">⏰</div>
       <div class="card-content">
         <div class="card-meta">Lifestyle</div>
         <h3>Time Prioritization</h3>
         <p>Practical strategies for prioritizing health in a busy lifestyle, time management for wellness, and creating sustainable healthy habits.</p>
+      </div>
+    </a>
+  </div>
+
+  <div class="card resource-card affiliate-links">
+    <a href="https://docs.google.com/document/d/19Om1DKyXBpNPX1cpzjAqdjFiZ66lIYLPY59BqZEcXqM/edit?usp=sharing" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+      <div class="card-content">
+        <div class="card-meta">Supplements</div>
+        <h3>How to Vet Supplements</h3>
+        <p>Essential guide to evaluating supplement quality, identifying trustworthy brands, and avoiding common marketing traps in the supplement industry.</p>
       </div>
     </a>
   </div>

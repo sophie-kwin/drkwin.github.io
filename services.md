@@ -1,6 +1,6 @@
 ---
 layout: base
-title: Services - Dr. Sophie Kwin, ND
+title: Services
 ---
 
 <div class="content-section">

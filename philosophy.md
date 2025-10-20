@@ -1,20 +1,21 @@
 ---
 layout: base
-title: My Philosophy - Dr. Sophie Kwin, ND
+title: Philosophy
+subtitle: Approach to medicine, health optimization, and personalized care.
 ---
 
 <div class="content-section">
 
 ## My Approach to Medicine
 
-Medicine 3.0 focuses on both lifespan and healthspan—the years lived in optimal health. My approach is collaborative, highly personalized, and grounded in evidence-informed medicine. My mission is simple: not just to treat what's wrong, but to help you discover what's possible.
+My approach is collaborative, highly personalized, and grounded in evidence-informed medicine.
+My mission is simple: not just to treat what's wrong, but to help you discover what's possible.
 
 </div>
 
-<div class="content-grid">
+<div class="content-grid resource-categories">
 
-  <div class="card">
-    <div class="card-image">🎯</div>
+  <div class="card resource-card free-guides">
     <div class="card-content">
       <div class="card-meta">Core Principle</div>
       <h3>Personalized Medicine</h3>
@@ -22,8 +23,7 @@ Medicine 3.0 focuses on both lifespan and healthspan—the years lived in optima
     </div>
   </div>
 
-  <div class="card">
-    <div class="card-image">🔬</div>
+  <div class="card resource-card premium-guides">
     <div class="card-content">
       <div class="card-meta">Evidence-Based</div>
       <h3>Science-Informed Care</h3>
@@ -31,8 +31,7 @@ Medicine 3.0 focuses on both lifespan and healthspan—the years lived in optima
     </div>
   </div>
 
-  <div class="card">
-    <div class="card-image">🌱</div>
+  <div class="card resource-card educational">
     <div class="card-content">
       <div class="card-meta">Holistic View</div>
       <h3>Root Cause Medicine</h3>
@@ -40,8 +39,7 @@ Medicine 3.0 focuses on both lifespan and healthspan—the years lived in optima
     </div>
   </div>
 
-  <div class="card">
-    <div class="card-image">⚖️</div>
+  <div class="card resource-card recommended-products">
     <div class="card-content">
       <div class="card-meta">Balance</div>
       <h3>Sustainable Health</h3>
@@ -54,5 +52,5 @@ Medicine 3.0 focuses on both lifespan and healthspan—the years lived in optima
 <div class="cta-section">
   <h2>Ready to Discover What's Possible?</h2>
   <p>Let's work together to optimize your health and unlock your potential</p>
-  <a href="/bookings/" class="btn">Schedule Consultation</a>
+  <a href="/contact/" class="btn">Get In Touch</a>
 </div>
