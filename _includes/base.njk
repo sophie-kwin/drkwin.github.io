@@ -728,56 +728,61 @@
         }
         
         /* About Page Layout */
-        .about-hero {
+        .about-profile { display: none; }
+        
+        .about-onebox {
             display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 3rem;
+            grid-template-columns: 1fr 280px;
+            gap: 2rem;
+            align-items: start;
+        }
+        
+        .about-onebox-text p + p { margin-top: 1rem; }
+        
+        .about-onebox-photo {
+            display: flex;
+            flex-direction: column;
             align-items: center;
-            margin: 3rem 0;
-            padding: 2rem;
-            background: linear-gradient(135deg, #9fd4fa 0%, #7585b9 100%);
-            border-radius: 16px;
-            color: white;
+            gap: 0.75rem;
         }
         
-        .about-image {
-            text-align: center;
+        .about-photo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.75rem;
         }
         
-        .about-image img {
-            width: 100%;
-            max-width: 300px;
-            height: auto;
-            border-radius: 12px;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-        }
-        
-        .about-content h1 {
+        .about-photo-label {
             font-family: 'Times New Roman', 'Georgia', 'Playfair Display', serif;
-            font-size: 2.5rem;
-            font-weight: 400;
-            color: white;
-            margin-bottom: 1.5rem;
-            letter-spacing: -0.02em;
+            color: #7585b9;
+            font-size: 0.95rem;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
         }
         
-        .about-intro {
-            font-size: 1.1rem;
-            line-height: 1.7;
-            color: rgba(255, 255, 255, 0.95);
-            margin: 0;
+        .about-photo img, .about-onebox-photo img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50% / 40%; /* subtle oval */
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            border: 4px solid #ffffff;
         }
+        
+        .about-photo-caption {
+            font-weight: 600;
+            color: #2d3748;
+        }
+        
+        .about-bio p { margin: 0; }
         
         @media (max-width: 768px) {
-            .about-hero {
+            .about-onebox {
                 grid-template-columns: 1fr;
-                gap: 2rem;
                 text-align: center;
             }
-            
-            .about-content h1 {
-                font-size: 2rem;
-            }
+            .about-photo img, .about-onebox-photo img { width: 180px; height: 180px; }
         }
         
         /* Contact Form Styles */
@@ -921,6 +926,19 @@
             margin-top: 2rem;
         }
         
+        /* Ensure horizontal layout on desktop */
+        @media (min-width: 900px) {
+            .contact-methods {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+            .contact-methods .contact-method {
+                flex: 1 1 0;
+                max-width: 360px;
+            }
+        }
+        
         .contact-row .contact-method {
             display: flex;
             flex-direction: column;
@@ -1020,6 +1038,9 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        /* Temporarily hide Resources from navigation */
+        .nav-links > li.dropdown { display: none; }
         
         /* Philosophy Page Tiles */
         .resource-card.philosophy-card {
@@ -1144,6 +1165,7 @@
                 <li><a href="/">Home</a></li>
                 <li><a href="/about/">About</a></li>
                 <li><a href="/philosophy/">Philosophy</a></li>
+                <li><a href="https://us.fullscript.com/welcome/skwin" target="_blank" rel="noopener noreferrer">Supplements</a></li>
                 <li class="dropdown">
                     <a href="/resources/" class="dropdown-toggle">Resources</a>
                     <div class="dropdown-menu">
