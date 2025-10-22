@@ -9,7 +9,7 @@ subtitle: Where evidence meets empathy, and potential meets practice.
 ## Welcome
 
 I'm Dr. Kwin, a naturopathic doctor (ND) trained in primary care with a background in athletics. 
-My Misson: Help you go beyond the absence of illness and to your highest potential. 
+My mission is to not only help you be free of disease, but to facilitate your highest potential.
 My approach blends the rigor of science with a deep respect for the human experience.
 
 <a href="/about/" style="color: #7585b9; text-decoration: none; font-weight: 500; font-size: 0.95rem;">Learn more about my story →</a>
