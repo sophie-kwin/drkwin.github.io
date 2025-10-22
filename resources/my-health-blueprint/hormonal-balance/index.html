@@ -1,0 +1,1713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hormonal Balance - My Health Blueprint</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            line-height: 1.6;
+            color: #2d3748;
+            background: #ffffff;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #9fd4fa 0%, #7585b9 100%);
+            color: white;
+            padding: 6rem 0;
+            text-align: center;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        /* Contact Page Header Override */
+        .contact-page header {
+            display: none;
+        }
+        
+        h1 {
+            font-family: 'Times New Roman', 'Georgia', 'Playfair Display', serif;
+            font-size: 4rem;
+            font-weight: 400;
+            margin-bottom: 1.25rem;
+            letter-spacing: -0.02em;
+            color: white;
+        }
+        
+        .subtitle {
+            font-size: 1.25rem;
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 400;
+            max-width: 600px;
+            margin: 0 auto 2rem auto;
+        }
+        
+        .hero-btn {
+            display: inline-block;
+            background: white;
+            color: #7585b9;
+            padding: 1rem 2.5rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-top: 1rem;
+            transition: all 0.2s ease;
+            font-size: 1.05rem;
+            letter-spacing: 0.025em;
+        }
+        
+        .hero-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(255, 255, 255, 0.3);
+            background: #dbb599;
+            color: white;
+        }
+        
+        main {
+            padding: 5rem 0;
+            background: #fafafa;
+        }
+        
+        .content-section {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            transition: all 0.2s ease;
+            overflow: hidden;
+        }
+        
+        .content-section:hover {
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+        
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            transition: all 0.2s ease;
+            overflow: hidden;
+        }
+        
+        .card:hover {
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+        
+        .card-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: #a0aec0;
+        }
+        
+        .card-content {
+            padding: 1.5rem;
+        }
+        
+        .card-meta {
+            font-size: 0.875rem;
+            color: #718096;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 500;
+        }
+        
+        .card h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #2d3748;
+            margin: 0 0 1rem 0;
+            line-height: 1.4;
+        }
+        
+        .card p {
+            color: #4a5568;
+            line-height: 1.6;
+            margin: 0;
+            font-size: 0.95rem;
+        }
+        
+        h2 {
+            font-family: 'Times New Roman', 'Georgia', 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 400;
+            color: #1a202c;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.02em;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2d3748;
+            margin: 2rem 0 1rem 0;
+            letter-spacing: -0.015em;
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+            color: #4a5568;
+            line-height: 1.7;
+            font-size: 1.05rem;
+        }
+        
+        ul {
+            margin: 1.5rem 0;
+            padding-left: 1.5rem;
+        }
+        
+        li {
+            margin: 0.75rem 0;
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        
+        strong {
+            color: #1a202c;
+            font-weight: 600;
+        }
+        
+        hr {
+            border: none;
+            height: 1px;
+            background: linear-gradient(to right, transparent, #e2e8f0, transparent);
+            margin: 3rem 0;
+        }
+        
+        .cta-section {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, #7585b9 0%, #9fd4fa 100%);
+            border-radius: 16px;
+            margin: 4rem 0;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, transparent 100%);
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #dbb599;
+            color: white;
+            padding: 1rem 2.5rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            transition: all 0.2s ease;
+            font-size: 1.05rem;
+            letter-spacing: 0.025em;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(219, 181, 153, 0.4);
+            background: #83573d;
+        }
+        
+        footer {
+            background: #1a202c;
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+            margin-top: 5rem;
+        }
+        
+        footer p {
+            opacity: 0.8;
+            margin: 0;
+            color: #a0aec0;
+        }
+        
+        nav {
+            background: #ffffff;
+            border-bottom: 1px solid #e2e8f0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 1.25rem 0;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            font-family: 'Times New Roman', 'Georgia', 'Playfair Display', serif;
+            font-size: 1.75rem;
+            font-weight: 400;
+            color: #5a6ba8;
+            text-decoration: none;
+            letter-spacing: -0.015em;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #83573d;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.2s ease;
+            padding: 0.5rem 0;
+        }
+        
+        .nav-links a:hover {
+            color: #7585b9;
+        }
+        
+        .mobile-menu {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #83573d;
+        }
+        
+        /* Search Functionality */
+        .search-container {
+            position: relative;
+        }
+        
+        .search-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: #83573d;
+            transition: color 0.2s ease;
+            padding: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .search-btn:hover {
+            color: #7585b9;
+        }
+        
+        .search-btn svg {
+            stroke: currentColor;
+        }
+        
+        /* Social and Email Icons */
+        .social-container, .email-container {
+            position: relative;
+        }
+        
+        .social-btn, .email-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: #83573d;
+            transition: color 0.2s ease;
+            padding: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+        
+        .social-btn:hover, .email-btn:hover {
+            color: #7585b9;
+        }
+        
+        .social-btn svg, .email-btn svg {
+            stroke: currentColor;
+        }
+        
+        /* Footer Social Links */
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .social-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #a0aec0;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s ease;
+        }
+        
+        .social-link:hover {
+            color: #dbb599;
+        }
+        
+        .social-link svg {
+            stroke: currentColor;
+        }
+        
+        .social-link span {
+            font-weight: 500;
+        }
+        
+        .search-dropdown {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+            min-width: 300px;
+            display: none;
+            z-index: 1000;
+        }
+        
+        .search-dropdown.active {
+            display: block;
+        }
+        
+        .search-container:hover .search-dropdown {
+            display: block;
+        }
+        
+        .search-input {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            outline: none;
+            margin-bottom: 0.5rem;
+        }
+        
+        .search-input:focus {
+            border-color: #7585b9;
+        }
+        
+        .search-results {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        
+        .search-result-item {
+            padding: 0.75rem;
+            border-bottom: 1px solid #f1f5f9;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+        
+        .search-result-item:hover {
+            background-color: #f8fafc;
+        }
+        
+        .search-result-item:last-child {
+            border-bottom: none;
+        }
+        
+        .search-result-title {
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 0.25rem;
+        }
+        
+        .search-result-description {
+            font-size: 0.875rem;
+            color: #718096;
+        }
+        
+        .search-result-url {
+            font-size: 0.75rem;
+            color: #a0aec0;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        /* Dropdown Menu Styles */
+        .dropdown {
+            position: relative;
+        }
+        
+        .dropdown-toggle {
+            position: relative;
+        }
+        
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            padding: 0.5rem 0;
+            min-width: 200px;
+            display: none;
+            z-index: 1000;
+        }
+        
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        
+        .dropdown-item {
+            position: relative;
+        }
+        
+        .dropdown-item > a {
+            display: block;
+            padding: 0.75rem 1.5rem;
+            color: #83573d;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            border-left: 3px solid transparent;
+        }
+        
+        .dropdown-item > a:hover {
+            background: #f8fafc;
+            color: #7585b9;
+            border-left-color: #9fd4fa;
+        }
+        
+        /* Flyout Menu Styles */
+        .flyout-menu {
+            position: absolute;
+            top: 0;
+            left: 100%;
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            padding: 0.5rem 0;
+            min-width: 250px;
+            display: none;
+            z-index: 1001;
+        }
+        
+        .dropdown-item:hover .flyout-menu {
+            display: block;
+        }
+        
+        .flyout-menu a {
+            display: block;
+            padding: 0.5rem 1.5rem;
+            color: #4a5568;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+            border-left: 3px solid transparent;
+        }
+        
+        .flyout-menu a:hover {
+            background: #f8fafc;
+            color: #7585b9;
+            border-left-color: #dbb599;
+        }
+        
+        /* Resource Category Colors */
+        .dropdown-item[data-category="free-guides"] > a:hover {
+            border-left-color: #9fd4fa;
+        }
+        
+        .dropdown-item[data-category="premium-guides"] > a:hover {
+            border-left-color: #7585b9;
+        }
+        
+        .dropdown-item[data-category="educational"] > a:hover {
+            border-left-color: #dbb599;
+        }
+        
+        .dropdown-item[data-category="recommended-products"] > a:hover {
+            border-left-color: #83573d;
+        }
+        
+        .dropdown-item[data-category="affiliate-links"] > a:hover {
+            border-left-color: #9fd4fa;
+        }
+        
+        .dropdown-item[data-category="my-health-blueprint"] > a:hover {
+            border-left-color: #7585b9;
+        }
+        
+        /* Resource Card Styling */
+        .resource-categories .card {
+            transition: all 0.3s ease;
+            aspect-ratio: 1.2;
+            display: flex;
+            flex-direction: column;
+            border-radius: 16px;
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+        
+        .resource-categories .card-image {
+            display: none;
+        }
+        
+        .resource-categories .card-content {
+            padding: 2rem;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .resource-categories .card-meta {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        
+        .resource-categories h3 {
+            font-size: 1.5rem;
+            margin: 0 0 1rem 0;
+            line-height: 1.2;
+        }
+        
+        .resource-categories p {
+            font-size: 0.9rem;
+            line-height: 1.4;
+            margin: 0;
+        }
+        
+        .resource-card.free-guides {
+            background: #9fd4fa;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .resource-card.free-guides .card-meta {
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .resource-card.free-guides:hover {
+            background: #dbb599;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(219, 181, 153, 0.3);
+        }
+        
+        .resource-card.premium-guides {
+            background: #b8d1f5;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .resource-card.premium-guides .card-meta {
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .resource-card.premium-guides:hover {
+            background: #83573d;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(131, 87, 61, 0.3);
+        }
+        
+        .resource-card.educational {
+            background: #7fb5f0;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .resource-card.educational .card-meta {
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .resource-card.educational:hover {
+            background: #d4a684;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(212, 166, 132, 0.3);
+        }
+        
+        .resource-card.recommended-products {
+            background: #6ba5eb;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .resource-card.recommended-products .card-meta {
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .resource-card.recommended-products:hover {
+            background: #c29d7a;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(194, 157, 122, 0.3);
+        }
+        
+        .resource-card.affiliate-links {
+            background: linear-gradient(135deg, #5a9ae6 0%, #7fb5f0 100%);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .resource-card.affiliate-links .card-meta {
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .resource-card.affiliate-links:hover {
+            background: linear-gradient(135deg, #dbb599 0%, #83573d 100%);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(219, 181, 153, 0.3);
+        }
+        
+        .resource-card.coming-soon {
+            background: #ffffff;
+            border: 2px solid #e2e8f0;
+            color: #83573d;
+        }
+        
+        .resource-card.coming-soon .card-meta {
+            color: #a0aec0;
+        }
+        
+        .resource-card.coming-soon:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* About Page Layout */
+        .about-profile { display: none; }
+        
+        .about-onebox {
+            display: grid;
+            grid-template-columns: 1fr 280px;
+            gap: 2rem;
+            align-items: start;
+        }
+        
+        .about-onebox-text p + p { margin-top: 1rem; }
+        
+        .about-onebox-photo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        .about-photo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        .about-photo-label {
+            font-family: 'Times New Roman', 'Georgia', 'Playfair Display', serif;
+            color: #7585b9;
+            font-size: 0.95rem;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+        
+        .about-photo img, .about-onebox-photo img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50% / 40%; /* subtle oval */
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            border: 4px solid #ffffff;
+        }
+        
+        .about-photo-caption {
+            font-weight: 600;
+            color: #2d3748;
+        }
+        
+        .about-bio p { margin: 0; }
+        
+        @media (max-width: 768px) {
+            .about-onebox {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .about-photo img, .about-onebox-photo img { width: 180px; height: 180px; }
+        }
+        
+        /* Contact Form Styles */
+        .contact-form-section {
+            background: linear-gradient(135deg, #9fd4fa 0%, #7585b9 100%);
+            color: white;
+            padding: 4rem 0;
+            margin: 0;
+        }
+        
+        .contact-form-section h1 {
+            font-family: 'Times New Roman', 'Georgia', 'Playfair Display', serif;
+            font-size: 3rem;
+            font-weight: 400;
+            color: white;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+            text-align: center;
+        }
+        
+        .contact-subtitle {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.9);
+            text-align: center;
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 16px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: white;
+            font-size: 0.95rem;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.875rem;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.9);
+            color: #2d3748;
+            font-size: 1rem;
+            transition: all 0.2s ease;
+        }
+        
+        /* Disable textarea resize handle */
+        .form-group textarea {
+            resize: none;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #dbb599;
+            background: white;
+            box-shadow: 0 0 0 3px rgba(219, 181, 153, 0.1);
+        }
+        
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: #a0aec0;
+        }
+        
+        .submit-btn {
+            width: 100%;
+            background: #dbb599;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            letter-spacing: 0.025em;
+        }
+        
+        .submit-btn:hover {
+            background: #83573d;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(131, 87, 61, 0.3);
+        }
+        
+        .submit-btn:disabled {
+            background: #a0aec0;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+        
+        .form-status {
+            margin-top: 1rem;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 500;
+        }
+        
+        .form-status.success {
+            background: rgba(72, 187, 120, 0.2);
+            color: #68d391;
+            border: 1px solid rgba(72, 187, 120, 0.3);
+        }
+        
+        .form-status.error {
+            background: rgba(245, 101, 101, 0.2);
+            color: #fc8181;
+            border: 1px solid rgba(245, 101, 101, 0.3);
+        }
+        
+        /* Contact Methods */
+        .contact-methods {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            align-items: stretch;
+            gap: 1.25rem;
+            margin-top: 2rem;
+        }
+        
+        /* Ensure horizontal layout on desktop */
+        @media (min-width: 900px) {
+            .contact-methods {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+            .contact-methods .contact-method {
+                flex: 1 1 0;
+                max-width: 360px;
+            }
+        }
+        
+        .contact-row .contact-method {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        .contact-method .icon {
+            color: #7585b9;
+        }
+        
+        .contact-method {
+            text-align: center;
+            padding: 2rem;
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            transition: all 0.2s ease;
+        }
+        
+        .contact-method:hover {
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+        
+        .contact-method h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-method p {
+            color: #718096;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+        
+        .contact-link {
+            display: inline-block;
+            background: #7585b9;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+        
+        .contact-link:hover {
+            background: #dbb599;
+            transform: translateY(-1px);
+        }
+        
+        .contact-ways-title {
+            text-align: center;
+        }
+        
+        .icon svg {
+            width: 40px;
+            height: 40px;
+        }
+        
+        .icon-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background: #f1f5f9;
+            color: #7585b9;
+            transition: all 0.2s ease;
+        }
+        
+        .icon-link:hover {
+            background: #e2e8f0;
+            color: #83573d;
+            transform: translateY(-2px);
+        }
+        
+        @media (max-width: 768px) {
+            .contact-form-section h1 {
+                font-size: 2.5rem;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-form {
+                padding: 1.5rem;
+            }
+            
+            .contact-methods {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Temporarily hide Resources from navigation */
+        .nav-links > li.dropdown { display: none; }
+        
+        /* Philosophy Page Tiles */
+        .resource-card.philosophy-card {
+            background: #ffffff;
+            border: 2px solid #e2e8f0;
+            color: #83573d;
+            transition: all 0.3s ease;
+        }
+        
+        .resource-card.philosophy-card .card-meta {
+            color: #7585b9;
+        }
+        
+        .resource-card.philosophy-card:nth-child(1):hover {
+            background: #9fd4fa;
+            color: white;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(159, 212, 250, 0.3);
+        }
+        
+        .resource-card.philosophy-card:nth-child(1):hover .card-meta {
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .resource-card.philosophy-card:nth-child(2):hover {
+            background: #7585b9;
+            color: white;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(117, 133, 185, 0.3);
+        }
+        
+        .resource-card.philosophy-card:nth-child(2):hover .card-meta {
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .resource-card.philosophy-card:nth-child(3):hover {
+            background: #b8d1f5;
+            color: white;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(184, 209, 245, 0.3);
+        }
+        
+        .resource-card.philosophy-card:nth-child(3):hover .card-meta {
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .resource-card.philosophy-card:nth-child(4):hover {
+            background: #7fb5f0;
+            color: white;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(127, 181, 240, 0.3);
+        }
+        
+        .resource-card.philosophy-card:nth-child(4):hover .card-meta {
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .container {
+                padding: 0 1rem;
+            }
+            
+            .nav-container {
+                padding: 0 1rem;
+            }
+            
+            .content-section {
+                padding: 1.5rem;
+                margin: 1rem 0;
+            }
+            
+            .content-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+                margin: 2rem 0;
+            }
+            
+            .card-content {
+                padding: 1.25rem;
+            }
+            
+            header {
+                padding: 3rem 0;
+            }
+            
+            main {
+                padding: 3rem 0;
+            }
+            
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                padding: 1rem;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                gap: 1rem;
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .mobile-menu {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="/" class="logo"> Sophia Victoria Kwin, ND </a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about/">About</a></li>
+                <li><a href="/philosophy/">Philosophy</a></li>
+                <li><a href="https://us.fullscript.com/welcome/skwin" target="_blank" rel="noopener noreferrer">Supplements</a></li>
+                <li class="dropdown">
+                    <a href="/resources/" class="dropdown-toggle">Resources</a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-item" data-category="free-guides">
+                            <a href="/resources/free-guides/">Free Guides</a>
+                            <div class="flyout-menu">
+                                <a href="/resources/free-guides/sleep-guide/">Sleep Guide</a>
+                                <a href="/resources/free-guides/grocery-shopping-list/">Grocery Shopping List</a>
+                                <a href="/resources/free-guides/protein-sources/">Protein Sources</a>
+                                <a href="/resources/free-guides/time-prioritization/">Time Prioritization</a>
+                                <a href="https://docs.google.com/document/d/19Om1DKyXBpNPX1cpzjAqdjFiZ66lIYLPY59BqZEcXqM/edit?usp=sharing" target="_blank" rel="noopener noreferrer">How to Vet Supplements</a>
+                            </div>
+                        </div>
+                        <div class="dropdown-item" data-category="premium-guides">
+                            <a href="/resources/premium-guides/">Premium Guides</a>
+                            <div class="flyout-menu">
+                                <a href="/resources/premium-guides/comprehensive-health-audit/">Comprehensive Health Audit</a>
+                                <a href="/resources/premium-guides/hormone-optimization-guide/">Hormone Optimization Guide</a>
+                                <a href="/resources/premium-guides/longevity-blueprint/">Longevity Blueprint</a>
+                                <a href="/resources/premium-guides/performance-protocol/">Performance Protocol</a>
+                            </div>
+                        </div>
+                        <div class="dropdown-item" data-category="educational">
+                            <a href="/resources/educational/">Educational</a>
+                            <div class="flyout-menu">
+                                <a href="/resources/educational/what-are-nds/">What are NDs (and what aren't we)</a>
+                                <a href="/resources/educational/holistic-vs-natural/">Holistic vs Natural</a>
+                                <a href="/resources/educational/what-is-detoxification/">What is detoxification? (and what isn't it)</a>
+                                <a href="/resources/educational/understanding-biomarkers/">Understanding Biomarkers</a>
+                            </div>
+                        </div>
+                        <div class="dropdown-item" data-category="recommended-products">
+                            <a href="/resources/recommended-products/">Recommended Products</a>
+                            <div class="flyout-menu">
+                                <a href="/resources/recommended-products/supplements/">Supplements</a>
+                                <a href="/resources/recommended-products/testing-kits/">Testing Kits</a>
+                                <a href="/resources/recommended-products/wellness-devices/">Wellness Devices</a>
+                                <a href="/resources/recommended-products/books/">Books</a>
+                            </div>
+                        </div>
+                        <div class="dropdown-item" data-category="my-health-blueprint">
+                            <a href="/resources/my-health-blueprint/">My Health Blueprint</a>
+                            <div class="flyout-menu">
+                                <a href="/resources/my-health-blueprint/foundations/">Foundations of Health</a>
+                                <a href="/resources/my-health-blueprint/metabolic-health/">Metabolic Health</a>
+                                <a href="/resources/my-health-blueprint/hormonal-balance/">Hormonal Balance</a>
+                                <a href="/resources/my-health-blueprint/immune-system/">Immune System</a>
+                                <a href="/resources/my-health-blueprint/mental-wellness/">Mental Wellness</a>
+                                <a href="/resources/my-health-blueprint/longevity/">Longevity & Prevention</a>
+                            </div>
+                        </div>
+                        <div class="dropdown-item" data-category="affiliate-links">
+                            <a href="/resources/affiliate-links/">Affiliate Links</a>
+                            <div class="flyout-menu">
+                                <a href="https://marekdiagnostics.com/drkwin" target="_blank" rel="noopener noreferrer">Lab Testing - Marek Health (use code drkwin)</a>
+                                <a href="https://us.fullscript.com/welcome/skwin" target="_blank" rel="noopener noreferrer">FullScript Supplements</a>
+                                <a href="https://www.amazon.com/shop/influencer-ab319d4b" target="_blank" rel="noopener noreferrer">Amazon Storefront</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="/contact/">Contact</a></li>
+                <li class="search-container">
+                    <button class="search-btn" onclick="toggleSearch()">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                    <div class="search-dropdown">
+                        <input type="text" placeholder="Search..." class="search-input">
+                        <div class="search-results"></div>
+                    </div>
+                </li>
+                <li class="social-container">
+                    <a href="https://www.instagram.com/sophie.kwin/" target="_blank" rel="noopener noreferrer" class="social-btn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="m16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                </li>
+                <li class="email-container">
+                    <a href="mailto:sophie@sophiekwin.com" class="email-btn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <button class="mobile-menu" onclick="toggleMenu()">☰</button>
+        </div>
+    </nav>
+    
+    <header>
+        <div class="container">
+            <h1>Hormonal Balance - My Health Blueprint</h1>
+            <p class="subtitle">Understanding and optimizing your endocrine system for peak performance.</p>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <div class="content-section">
+<h2>Hormonal Balance: Your Body's Command Center</h2>
+<p>Hormones are chemical messengers that coordinate virtually every function in your body—from energy and mood to sleep and reproduction. When hormones are balanced, you feel energized, resilient, and vital. When they're not, even small imbalances can create significant symptoms that impact quality of life.</p>
+</div>
+<div class="content-grid">
+  <div class="card">
+    <div class="card-image">⚡</div>
+    <div class="card-content">
+      <div class="card-meta">Energy</div>
+      <h3>Thyroid Function</h3>
+      <p>Your metabolic thermostat controlling energy, weight, temperature, and cellular function.</p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">💪</div>
+    <div class="card-content">
+      <div class="card-meta">Stress</div>
+      <h3>Adrenal Health</h3>
+      <p>Cortisol, adrenaline, and stress hormone regulation for resilience and recovery.</p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">🌙</div>
+    <div class="card-content">
+      <div class="card-meta">Reproduction</div>
+      <h3>Sex Hormones</h3>
+      <p>Estrogen, progesterone, and testosterone for vitality, mood, and long-term health.</p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">🍯</div>
+    <div class="card-content">
+      <div class="card-meta">Metabolism</div>
+      <h3>Insulin & Blood Sugar</h3>
+      <p>Glucose regulation, insulin sensitivity, and metabolic hormone optimization.</p>
+    </div>
+  </div>
+</div>
+<div class="content-section">
+<h2>Understanding Hormonal Interconnections</h2>
+<p><strong>Hormones don't work in isolation.</strong> They function as an intricate network where imbalances in one area often cascade to affect others. This is why addressing root causes rather than isolated symptoms is crucial for lasting hormone optimization.</p>
+<h3>The Hormone Hierarchy:</h3>
+<ol>
+<li><strong>Stress hormones</strong> (cortisol) - These take priority and can disrupt all others</li>
+<li><strong>Thyroid hormones</strong> - Control the speed of all metabolic processes</li>
+<li><strong>Insulin</strong> - Affects every other hormone system</li>
+<li><strong>Sex hormones</strong> - Often the last to be optimized, first to be disrupted</li>
+</ol>
+<h3>Common Hormone Disruptors:</h3>
+<ul>
+<li><strong>Chronic stress</strong> - Elevates cortisol, disrupts sleep, affects all systems</li>
+<li><strong>Poor sleep</strong> - Disrupts growth hormone, cortisol rhythm, and sex hormones</li>
+<li><strong>Blood sugar imbalances</strong> - Insulin spikes affect cortisol and sex hormones</li>
+<li><strong>Environmental toxins</strong> - Endocrine disruptors in plastics, cosmetics, pesticides</li>
+<li><strong>Nutrient deficiencies</strong> - Lack of building blocks for hormone production</li>
+</ul>
+</div>
+<div class="content-section">
+<h2>Thyroid: Your Metabolic Thermostat</h2>
+<p><strong>The thyroid controls the speed of life.</strong> Every cell in your body has thyroid hormone receptors, making optimal thyroid function essential for energy, weight management, mood, and cognitive function.</p>
+<h3>Signs of Thyroid Dysfunction:</h3>
+<ul>
+<li><strong>Hypothyroid symptoms:</strong> Fatigue, weight gain, cold intolerance, brain fog, constipation, dry skin</li>
+<li><strong>Hyperthyroid symptoms:</strong> Anxiety, weight loss, heat intolerance, rapid heartbeat, insomnia</li>
+</ul>
+<h3>Comprehensive Thyroid Testing:</h3>
+<ul>
+<li><strong>TSH</strong> - Brain signal to thyroid (normal ≠ optimal)</li>
+<li><strong>Free T4</strong> - Storage hormone</li>
+<li><strong>Free T3</strong> - Active hormone</li>
+<li><strong>Reverse T3</strong> - Inactive form that blocks T3</li>
+<li><strong>Thyroid antibodies</strong> - TPO, TgAb for autoimmune assessment</li>
+</ul>
+<h3>Supporting Thyroid Health:</h3>
+<h4>Nutrition:</h4>
+<ul>
+<li><strong>Iodine:</strong> Essential but balance is key (too much can be harmful)</li>
+<li><strong>Selenium:</strong> Required for T4 to T3 conversion</li>
+<li><strong>Zinc:</strong> Supports hormone production and conversion</li>
+<li><strong>Tyrosine:</strong> Amino acid building block for thyroid hormones</li>
+<li><strong>Iron:</strong> Deficiency impairs thyroid function</li>
+</ul>
+<h4>Lifestyle:</h4>
+<ul>
+<li><strong>Stress management:</strong> Chronic stress inhibits T4 to T3 conversion</li>
+<li><strong>Sleep optimization:</strong> Poor sleep disrupts thyroid hormone production</li>
+<li><strong>Avoid goitrogens:</strong> Limit raw cruciferous vegetables if hypothyroid</li>
+<li><strong>Timing matters:</strong> Take thyroid medication away from food and supplements</li>
+</ul>
+</div>
+<div class="content-section">
+<h2>Adrenal Health &amp; Stress Hormones</h2>
+<p><strong>Your adrenals are your stress response system.</strong> While they're designed to handle acute stress beautifully, chronic stress can lead to dysregulation that affects every aspect of health.</p>
+<h3>The Cortisol Rhythm:</h3>
+<ul>
+<li><strong>Morning:</strong> High cortisol for energy and alertness</li>
+<li><strong>Afternoon:</strong> Gradual decline throughout the day</li>
+<li><strong>Evening:</strong> Low cortisol for relaxation and sleep</li>
+<li><strong>Nighttime:</strong> Lowest levels for restorative sleep</li>
+</ul>
+<h3>Signs of Adrenal Dysfunction:</h3>
+<ul>
+<li><strong>Morning fatigue:</strong> Difficulty waking up despite adequate sleep</li>
+<li><strong>Afternoon crashes:</strong> Energy dips, especially 2-4 PM</li>
+<li><strong>Evening wired feeling:</strong> Tired but unable to relax</li>
+<li><strong>Blood sugar swings:</strong> Cravings, mood changes</li>
+<li><strong>Salt cravings:</strong> Especially for salty/sweet combinations</li>
+<li><strong>Poor stress tolerance:</strong> Feeling overwhelmed by normal stressors</li>
+</ul>
+<h3>Supporting Adrenal Health:</h3>
+<h4>Stress Management:</h4>
+<ul>
+<li><strong>Breathing practices:</strong> Activate parasympathetic nervous system</li>
+<li><strong>Regular sleep schedule:</strong> Support natural cortisol rhythm</li>
+<li><strong>Gentle exercise:</strong> Avoid over-training when adrenals are stressed</li>
+<li><strong>Nature exposure:</strong> Reduces cortisol and promotes recovery</li>
+</ul>
+<h4>Nutritional Support:</h4>
+<ul>
+<li><strong>Adaptogenic herbs:</strong> Ashwagandha, rhodiola, holy basil</li>
+<li><strong>B-vitamins:</strong> Essential for stress hormone production</li>
+<li><strong>Magnesium:</strong> Calms nervous system, supports sleep</li>
+<li><strong>Vitamin C:</strong> High concentrations in adrenal glands</li>
+<li><strong>Stable blood sugar:</strong> Prevents additional stress on adrenals</li>
+</ul>
+</div>
+<div class="content-section">
+<h2>Sex Hormone Optimization</h2>
+<p><strong>Sex hormones affect far more than reproduction.</strong> Estrogen, progesterone, and testosterone influence mood, energy, cognitive function, bone health, cardiovascular health, and quality of life.</p>
+<h3>For Women:</h3>
+<h4>Estrogen Balance:</h4>
+<ul>
+<li><strong>Too low:</strong> Hot flashes, mood swings, vaginal dryness, osteoporosis risk</li>
+<li><strong>Too high:</strong> PMS, heavy periods, breast tenderness, increased cancer risk</li>
+<li><strong>Poor metabolism:</strong> Can lead to estrogen dominance even with normal production</li>
+</ul>
+<h4>Progesterone:</h4>
+<ul>
+<li><strong>Calming hormone:</strong> Promotes sleep, reduces anxiety</li>
+<li><strong>Balances estrogen:</strong> Prevents estrogen dominance</li>
+<li><strong>Supports pregnancy:</strong> Essential for conception and maintaining pregnancy</li>
+</ul>
+<h4>Cycling Women:</h4>
+<ul>
+<li><strong>Track your cycle:</strong> Understand natural hormone fluctuations</li>
+<li><strong>Seed cycling:</strong> Pumpkin/flax (follicular), sesame/sunflower (luteal)</li>
+<li><strong>Exercise variation:</strong> Match intensity to cycle phase</li>
+<li><strong>Stress during luteal phase:</strong> Extra self-care when progesterone drops</li>
+</ul>
+<h4>Menopause:</h4>
+<ul>
+<li><strong>Bioidentical hormones:</strong> May be appropriate for some women</li>
+<li><strong>Phytoestrogens:</strong> Soy, flax, legumes for gentle support</li>
+<li><strong>Bone health:</strong> Focus on weight-bearing exercise and vitamin D</li>
+<li><strong>Heart health:</strong> Cardiovascular support becomes more important</li>
+</ul>
+<h3>For Men:</h3>
+<h4>Testosterone Optimization:</h4>
+<ul>
+<li><strong>Strength training:</strong> Compound movements, progressive overload</li>
+<li><strong>Adequate fat:</strong> 20-30% calories for hormone production</li>
+<li><strong>Zinc and vitamin D:</strong> Essential for testosterone production</li>
+<li><strong>Sleep quality:</strong> Most testosterone produced during deep sleep</li>
+<li><strong>Stress management:</strong> Chronic stress suppresses testosterone</li>
+</ul>
+</div>
+<div class="content-section">
+<h2>Insulin: The Master Metabolic Hormone</h2>
+<p><strong>Insulin affects every other hormone system.</strong> Optimizing insulin sensitivity is fundamental to overall hormonal health.</p>
+<h3>How Insulin Affects Other Hormones:</h3>
+<ul>
+<li><strong>Disrupts ovulation:</strong> High insulin can cause PCOS</li>
+<li><strong>Increases cortisol:</strong> Blood sugar swings stress the adrenals</li>
+<li><strong>Blocks thyroid:</strong> Insulin resistance impairs T4 to T3 conversion</li>
+<li><strong>Lowers sex hormones:</strong> Affects SHBG and free hormone levels</li>
+</ul>
+<h3>Optimizing Insulin Sensitivity:</h3>
+<ul>
+<li><strong>Stable blood sugar:</strong> Avoid spikes and crashes</li>
+<li><strong>Regular exercise:</strong> Both cardio and strength training</li>
+<li><strong>Intermittent fasting:</strong> Gives insulin receptors a break</li>
+<li><strong>Adequate sleep:</strong> Sleep deprivation causes insulin resistance</li>
+<li><strong>Stress management:</strong> Chronic stress promotes insulin resistance</li>
+</ul>
+<p><em>Related: <a href="/resources/my-health-blueprint/metabolic-health/">Metabolic Health</a> for detailed insulin optimization</em></p>
+</div>
+<div class="content-section">
+<h2>Hormone Testing &amp; Monitoring</h2>
+<h3>Essential Tests:</h3>
+<ul>
+<li><strong>Thyroid panel:</strong> TSH, Free T4, Free T3, Reverse T3, antibodies</li>
+<li><strong>Adrenal function:</strong> 4-point cortisol test, DHEA-S</li>
+<li><strong>Sex hormones:</strong> Varies by age and cycling status</li>
+<li><strong>Metabolic markers:</strong> Fasting insulin, glucose, HbA1c</li>
+<li><strong>Nutrients:</strong> B12, D3, iron panel, magnesium</li>
+</ul>
+<h3>Advanced Testing:</h3>
+<ul>
+<li><strong>DUTCH test:</strong> Comprehensive hormone metabolite analysis</li>
+<li><strong>24-hour urine:</strong> Cortisol rhythm and sex hormone metabolites</li>
+<li><strong>Organic acids:</strong> Nutrient status and metabolic function</li>
+</ul>
+<h3>Timing Matters:</h3>
+<ul>
+<li><strong>Women:</strong> Test based on cycle day or menopause status</li>
+<li><strong>Men:</strong> Morning testing for testosterone</li>
+<li><strong>Cortisol:</strong> Multiple time points throughout the day</li>
+</ul>
+</div>
+<div class="content-section">
+<h2>Creating Your Hormone Optimization Plan</h2>
+<h3>Phase 1: Foundation (Weeks 1-4)</h3>
+<ul>
+<li>Optimize sleep and stress management</li>
+<li>Stabilize blood sugar</li>
+<li>Support basic nutrition needs</li>
+<li>Begin gentle exercise routine</li>
+</ul>
+<h3>Phase 2: Assessment (Weeks 5-6)</h3>
+<ul>
+<li>Comprehensive hormone testing</li>
+<li>Identify primary imbalances</li>
+<li>Address obvious deficiencies</li>
+</ul>
+<h3>Phase 3: Targeted Support (Weeks 7-12)</h3>
+<ul>
+<li>Implement specific protocols</li>
+<li>Monitor symptoms and energy</li>
+<li>Adjust based on response</li>
+<li>Retest as needed</li>
+</ul>
+<h3>Phase 4: Maintenance</h3>
+<ul>
+<li>Ongoing lifestyle support</li>
+<li>Periodic monitoring</li>
+<li>Adjustments for life changes</li>
+<li>Preventive care</li>
+</ul>
+</div>
+<div class="cta-section">
+  <h2>Ready for Professional Hormone Optimization?</h2>
+  <p>Get comprehensive testing and personalized hormone balancing protocols</p>
+  <a href="/contact/" class="btn">Get In Touch</a>
+</div>
+<div class="content-section">
+<h2>Related Resources</h2>
+<ul>
+<li><strong><a href="/resources/my-health-blueprint/foundations/">Foundations of Health</a></strong> - Essential basics for hormone health</li>
+<li><strong><a href="/resources/my-health-blueprint/metabolic-health/">Metabolic Health</a></strong> - Insulin and metabolic hormone optimization</li>
+<li><strong><a href="/resources/my-health-blueprint/mental-wellness/">Mental Wellness</a></strong> - How hormones affect mood and cognition</li>
+<li><strong><a href="/resources/free-guides/sleep-guide/">Sleep Optimization Guide</a></strong> - Critical for hormone production and balance</li>
+</ul>
+</div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/sophia-kwin" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://www.instagram.com/sophie.kwin/" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="m16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                        <span>Instagram</span>
+                    </a>
+                </div>
+                <p>&copy; 2024 Sophie's Website. Built with 11ty.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Add contact page class to body
+        if (window.location.pathname === '/contact/' || window.location.pathname === '/contact') {
+            document.body.classList.add('contact-page');
+        }
+        
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+        
+        function toggleSearch() {
+            const searchDropdown = document.querySelector('.search-dropdown');
+            searchDropdown.classList.toggle('active');
+            if (searchDropdown.classList.contains('active')) {
+                setTimeout(() => {
+                    document.querySelector('.search-input').focus();
+                }, 100);
+            }
+        }
+        
+        // Close search dropdown when clicking outside
+        document.addEventListener('click', function(event) {
+            const searchContainer = document.querySelector('.search-container');
+            const searchDropdown = document.querySelector('.search-dropdown');
+            
+            if (!searchContainer.contains(event.target)) {
+                searchDropdown.classList.remove('active');
+            }
+        });
+        
+        // Keep search dropdown open on hover
+        document.addEventListener('mouseover', function(event) {
+            const searchContainer = document.querySelector('.search-container');
+            const searchDropdown = document.querySelector('.search-dropdown');
+            
+            if (searchContainer.contains(event.target)) {
+                searchDropdown.classList.add('active');
+            }
+        });
+        
+        document.addEventListener('mouseout', function(event) {
+            const searchContainer = document.querySelector('.search-container');
+            const searchDropdown = document.querySelector('.search-dropdown');
+            
+            if (!searchContainer.contains(event.target)) {
+                // Only close if not actively typing
+                const searchInput = document.querySelector('.search-input');
+                if (!searchInput.matches(':focus')) {
+                    searchDropdown.classList.remove('active');
+                }
+            }
+        });
+        
+        // Search functionality with dropdown suggestions
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.querySelector('.search-input');
+            const searchResults = document.querySelector('.search-results');
+            const searchDropdown = document.querySelector('.search-dropdown');
+            
+            // Search data - this would ideally be generated from your site content
+            const searchData = [
+                { title: "About", description: "Learn about Dr. Sophia Kwin's background and approach", url: "/about/", keywords: ["about", "doctor", "background", "story"] },
+                { title: "Philosophy", description: "Dr. Kwin's approach to Medicine 3.0 and health optimization", url: "/philosophy/", keywords: ["philosophy", "medicine", "approach", "health", "optimization"] },
+                { title: "Resources", description: "Free guides, premium content, and educational materials", url: "/resources/", keywords: ["resources", "guides", "education", "content"] },
+                { title: "Free Guides", description: "Complimentary health guides and practical tools", url: "/resources/free-guides/", keywords: ["free", "guides", "complimentary", "tools"] },
+                { title: "Premium Guides", description: "Comprehensive protocols for serious health optimization", url: "/resources/premium-guides/", keywords: ["premium", "guides", "protocols", "optimization"] },
+                { title: "Educational Content", description: "Evidence-based articles on naturopathic medicine", url: "/resources/educational/", keywords: ["educational", "articles", "naturopathic", "medicine"] },
+                { title: "Recommended Products", description: "Personally selected supplements and wellness devices", url: "/resources/recommended-products/", keywords: ["products", "supplements", "devices", "recommended"] },
+                { title: "My Health Blueprint", description: "Comprehensive framework for understanding your health", url: "/resources/my-health-blueprint/", keywords: ["blueprint", "framework", "health", "comprehensive"] },
+                { title: "Contact", description: "Get in touch with Dr. Sophia Kwin", url: "/contact/", keywords: ["contact", "get in touch", "email", "reach out"] },
+                { title: "Sleep Guide", description: "Comprehensive sleep assessment and optimization", url: "/resources/free-guides/sleep-guide/", keywords: ["sleep", "rest", "optimization", "assessment"] },
+                { title: "Grocery Shopping List", description: "Healthy food recommendations and shopping guide", url: "/resources/free-guides/grocery-shopping-list/", keywords: ["grocery", "shopping", "food", "nutrition"] },
+                { title: "Protein Sources", description: "Complete guide to protein sources and requirements", url: "/resources/free-guides/protein-sources/", keywords: ["protein", "nutrition", "muscle", "sources"] },
+                { title: "Time Prioritization", description: "Strategies for managing time and priorities", url: "/resources/free-guides/time-prioritization/", keywords: ["time", "priorities", "management", "productivity"] },
+                { title: "Comprehensive Health Audit", description: "Complete health assessment and optimization protocol", url: "/resources/premium-guides/comprehensive-health-audit/", keywords: ["audit", "assessment", "comprehensive", "health"] },
+                { title: "Hormone Optimization Guide", description: "Bioidentical hormone replacement therapy guide", url: "/resources/premium-guides/hormone-optimization-guide/", keywords: ["hormones", "optimization", "bHRT", "bioidentical"] },
+                { title: "Foundations of Health", description: "Core principles for optimal health and wellness", url: "/resources/my-health-blueprint/foundations/", keywords: ["foundations", "principles", "core", "health"] },
+                { title: "Metabolic Health", description: "Understanding and optimizing your metabolism", url: "/resources/my-health-blueprint/metabolic-health/", keywords: ["metabolic", "metabolism", "health", "optimization"] },
+                { title: "Hormonal Balance", description: "Achieving and maintaining hormonal equilibrium", url: "/resources/my-health-blueprint/hormonal-balance/", keywords: ["hormonal", "balance", "hormones", "equilibrium"] },
+                { title: "Immune System", description: "Supporting and optimizing immune function", url: "/resources/my-health-blueprint/immune-system/", keywords: ["immune", "system", "immunity", "function"] },
+                { title: "Mental Wellness", description: "Holistic approach to mental health and wellbeing", url: "/resources/my-health-blueprint/mental-wellness/", keywords: ["mental", "wellness", "health", "wellbeing"] },
+                { title: "Longevity & Prevention", description: "Strategies for healthy aging and disease prevention", url: "/resources/my-health-blueprint/longevity/", keywords: ["longevity", "prevention", "aging", "disease"] }
+            ];
+            
+            if (searchInput) {
+                let searchTimeout;
+                
+                searchInput.addEventListener('input', function() {
+                    clearTimeout(searchTimeout);
+                    const query = this.value.trim().toLowerCase();
+                    
+                    if (query.length === 0) {
+                        searchResults.innerHTML = '';
+                        return;
+                    }
+                    
+                    searchTimeout = setTimeout(() => {
+                        const results = searchData.filter(item => {
+                            return item.title.toLowerCase().includes(query) ||
+                                   item.description.toLowerCase().includes(query) ||
+                                   item.keywords.some(keyword => keyword.toLowerCase().includes(query));
+                        }).slice(0, 8); // Limit to 8 results
+                        
+                        displaySearchResults(results);
+                    }, 150);
+                });
+                
+                searchInput.addEventListener('keypress', function(e) {
+                    if (e.key === 'Enter') {
+                        const query = this.value.trim();
+                        if (query) {
+                            const results = searchData.filter(item => {
+                                return item.title.toLowerCase().includes(query.toLowerCase()) ||
+                                       item.description.toLowerCase().includes(query.toLowerCase()) ||
+                                       item.keywords.some(keyword => keyword.toLowerCase().includes(query.toLowerCase()));
+                            });
+                            
+                            if (results.length > 0) {
+                                window.location.href = results[0].url;
+                            }
+                        }
+                    }
+                });
+                
+                function displaySearchResults(results) {
+                    if (results.length === 0) {
+                        searchResults.innerHTML = '<div class="search-result-item"><div class="search-result-title">No results found</div></div>';
+                        return;
+                    }
+                    
+                    searchResults.innerHTML = results.map(result => `
+                        <div class="search-result-item" onclick="window.location.href='${result.url}'">
+                            <div class="search-result-title">${result.title}</div>
+                            <div class="search-result-description">${result.description}</div>
+                            <div class="search-result-url">${result.url}</div>
+                        </div>
+                    `).join('');
+                }
+            }
+        });
+        
+        // Contact Form Submission (handled by FormSubmit via HTML form action)
+        // We keep a light enhancement for showing a message after redirect back with ?sent=1
+        document.addEventListener('DOMContentLoaded', function() {
+            const params = new URLSearchParams(window.location.search);
+            if (params.get('sent') === '1') {
+                const formStatus = document.getElementById('formStatus');
+                if (formStatus) {
+                    formStatus.classList.add('success');
+                    formStatus.textContent = 'Your message has been sent.';
+                    formStatus.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }
+        });
+    </script>
+</body>
+</html>

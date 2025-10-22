@@ -1,0 +1,1833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Wellness - My Health Blueprint</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            line-height: 1.6;
+            color: #2d3748;
+            background: #ffffff;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #9fd4fa 0%, #7585b9 100%);
+            color: white;
+            padding: 6rem 0;
+            text-align: center;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        /* Contact Page Header Override */
+        .contact-page header {
+            display: none;
+        }
+        
+        h1 {
+            font-family: 'Times New Roman', 'Georgia', 'Playfair Display', serif;
+            font-size: 4rem;
+            font-weight: 400;
+            margin-bottom: 1.25rem;
+            letter-spacing: -0.02em;
+            color: white;
+        }
+        
+        .subtitle {
+            font-size: 1.25rem;
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 400;
+            max-width: 600px;
+            margin: 0 auto 2rem auto;
+        }
+        
+        .hero-btn {
+            display: inline-block;
+            background: white;
+            color: #7585b9;
+            padding: 1rem 2.5rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-top: 1rem;
+            transition: all 0.2s ease;
+            font-size: 1.05rem;
+            letter-spacing: 0.025em;
+        }
+        
+        .hero-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(255, 255, 255, 0.3);
+            background: #dbb599;
+            color: white;
+        }
+        
+        main {
+            padding: 5rem 0;
+            background: #fafafa;
+        }
+        
+        .content-section {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            transition: all 0.2s ease;
+            overflow: hidden;
+        }
+        
+        .content-section:hover {
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+        
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            transition: all 0.2s ease;
+            overflow: hidden;
+        }
+        
+        .card:hover {
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+        
+        .card-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: #a0aec0;
+        }
+        
+        .card-content {
+            padding: 1.5rem;
+        }
+        
+        .card-meta {
+            font-size: 0.875rem;
+            color: #718096;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 500;
+        }
+        
+        .card h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #2d3748;
+            margin: 0 0 1rem 0;
+            line-height: 1.4;
+        }
+        
+        .card p {
+            color: #4a5568;
+            line-height: 1.6;
+            margin: 0;
+            font-size: 0.95rem;
+        }
+        
+        h2 {
+            font-family: 'Times New Roman', 'Georgia', 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 400;
+            color: #1a202c;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.02em;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2d3748;
+            margin: 2rem 0 1rem 0;
+            letter-spacing: -0.015em;
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+            color: #4a5568;
+            line-height: 1.7;
+            font-size: 1.05rem;
+        }
+        
+        ul {
+            margin: 1.5rem 0;
+            padding-left: 1.5rem;
+        }
+        
+        li {
+            margin: 0.75rem 0;
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        
+        strong {
+            color: #1a202c;
+            font-weight: 600;
+        }
+        
+        hr {
+            border: none;
+            height: 1px;
+            background: linear-gradient(to right, transparent, #e2e8f0, transparent);
+            margin: 3rem 0;
+        }
+        
+        .cta-section {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, #7585b9 0%, #9fd4fa 100%);
+            border-radius: 16px;
+            margin: 4rem 0;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, transparent 100%);
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #dbb599;
+            color: white;
+            padding: 1rem 2.5rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            transition: all 0.2s ease;
+            font-size: 1.05rem;
+            letter-spacing: 0.025em;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(219, 181, 153, 0.4);
+            background: #83573d;
+        }
+        
+        footer {
+            background: #1a202c;
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+            margin-top: 5rem;
+        }
+        
+        footer p {
+            opacity: 0.8;
+            margin: 0;
+            color: #a0aec0;
+        }
+        
+        nav {
+            background: #ffffff;
+            border-bottom: 1px solid #e2e8f0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 1.25rem 0;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            font-family: 'Times New Roman', 'Georgia', 'Playfair Display', serif;
+            font-size: 1.75rem;
+            font-weight: 400;
+            color: #5a6ba8;
+            text-decoration: none;
+            letter-spacing: -0.015em;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #83573d;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.2s ease;
+            padding: 0.5rem 0;
+        }
+        
+        .nav-links a:hover {
+            color: #7585b9;
+        }
+        
+        .mobile-menu {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #83573d;
+        }
+        
+        /* Search Functionality */
+        .search-container {
+            position: relative;
+        }
+        
+        .search-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: #83573d;
+            transition: color 0.2s ease;
+            padding: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .search-btn:hover {
+            color: #7585b9;
+        }
+        
+        .search-btn svg {
+            stroke: currentColor;
+        }
+        
+        /* Social and Email Icons */
+        .social-container, .email-container {
+            position: relative;
+        }
+        
+        .social-btn, .email-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: #83573d;
+            transition: color 0.2s ease;
+            padding: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+        
+        .social-btn:hover, .email-btn:hover {
+            color: #7585b9;
+        }
+        
+        .social-btn svg, .email-btn svg {
+            stroke: currentColor;
+        }
+        
+        /* Footer Social Links */
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .social-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #a0aec0;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s ease;
+        }
+        
+        .social-link:hover {
+            color: #dbb599;
+        }
+        
+        .social-link svg {
+            stroke: currentColor;
+        }
+        
+        .social-link span {
+            font-weight: 500;
+        }
+        
+        .search-dropdown {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+            min-width: 300px;
+            display: none;
+            z-index: 1000;
+        }
+        
+        .search-dropdown.active {
+            display: block;
+        }
+        
+        .search-container:hover .search-dropdown {
+            display: block;
+        }
+        
+        .search-input {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            outline: none;
+            margin-bottom: 0.5rem;
+        }
+        
+        .search-input:focus {
+            border-color: #7585b9;
+        }
+        
+        .search-results {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        
+        .search-result-item {
+            padding: 0.75rem;
+            border-bottom: 1px solid #f1f5f9;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+        
+        .search-result-item:hover {
+            background-color: #f8fafc;
+        }
+        
+        .search-result-item:last-child {
+            border-bottom: none;
+        }
+        
+        .search-result-title {
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 0.25rem;
+        }
+        
+        .search-result-description {
+            font-size: 0.875rem;
+            color: #718096;
+        }
+        
+        .search-result-url {
+            font-size: 0.75rem;
+            color: #a0aec0;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        /* Dropdown Menu Styles */
+        .dropdown {
+            position: relative;
+        }
+        
+        .dropdown-toggle {
+            position: relative;
+        }
+        
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            padding: 0.5rem 0;
+            min-width: 200px;
+            display: none;
+            z-index: 1000;
+        }
+        
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        
+        .dropdown-item {
+            position: relative;
+        }
+        
+        .dropdown-item > a {
+            display: block;
+            padding: 0.75rem 1.5rem;
+            color: #83573d;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            border-left: 3px solid transparent;
+        }
+        
+        .dropdown-item > a:hover {
+            background: #f8fafc;
+            color: #7585b9;
+            border-left-color: #9fd4fa;
+        }
+        
+        /* Flyout Menu Styles */
+        .flyout-menu {
+            position: absolute;
+            top: 0;
+            left: 100%;
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            padding: 0.5rem 0;
+            min-width: 250px;
+            display: none;
+            z-index: 1001;
+        }
+        
+        .dropdown-item:hover .flyout-menu {
+            display: block;
+        }
+        
+        .flyout-menu a {
+            display: block;
+            padding: 0.5rem 1.5rem;
+            color: #4a5568;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+            border-left: 3px solid transparent;
+        }
+        
+        .flyout-menu a:hover {
+            background: #f8fafc;
+            color: #7585b9;
+            border-left-color: #dbb599;
+        }
+        
+        /* Resource Category Colors */
+        .dropdown-item[data-category="free-guides"] > a:hover {
+            border-left-color: #9fd4fa;
+        }
+        
+        .dropdown-item[data-category="premium-guides"] > a:hover {
+            border-left-color: #7585b9;
+        }
+        
+        .dropdown-item[data-category="educational"] > a:hover {
+            border-left-color: #dbb599;
+        }
+        
+        .dropdown-item[data-category="recommended-products"] > a:hover {
+            border-left-color: #83573d;
+        }
+        
+        .dropdown-item[data-category="affiliate-links"] > a:hover {
+            border-left-color: #9fd4fa;
+        }
+        
+        .dropdown-item[data-category="my-health-blueprint"] > a:hover {
+            border-left-color: #7585b9;
+        }
+        
+        /* Resource Card Styling */
+        .resource-categories .card {
+            transition: all 0.3s ease;
+            aspect-ratio: 1.2;
+            display: flex;
+            flex-direction: column;
+            border-radius: 16px;
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+        
+        .resource-categories .card-image {
+            display: none;
+        }
+        
+        .resource-categories .card-content {
+            padding: 2rem;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .resource-categories .card-meta {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        
+        .resource-categories h3 {
+            font-size: 1.5rem;
+            margin: 0 0 1rem 0;
+            line-height: 1.2;
+        }
+        
+        .resource-categories p {
+            font-size: 0.9rem;
+            line-height: 1.4;
+            margin: 0;
+        }
+        
+        .resource-card.free-guides {
+            background: #9fd4fa;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .resource-card.free-guides .card-meta {
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .resource-card.free-guides:hover {
+            background: #dbb599;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(219, 181, 153, 0.3);
+        }
+        
+        .resource-card.premium-guides {
+            background: #b8d1f5;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .resource-card.premium-guides .card-meta {
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .resource-card.premium-guides:hover {
+            background: #83573d;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(131, 87, 61, 0.3);
+        }
+        
+        .resource-card.educational {
+            background: #7fb5f0;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .resource-card.educational .card-meta {
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .resource-card.educational:hover {
+            background: #d4a684;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(212, 166, 132, 0.3);
+        }
+        
+        .resource-card.recommended-products {
+            background: #6ba5eb;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .resource-card.recommended-products .card-meta {
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .resource-card.recommended-products:hover {
+            background: #c29d7a;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(194, 157, 122, 0.3);
+        }
+        
+        .resource-card.affiliate-links {
+            background: linear-gradient(135deg, #5a9ae6 0%, #7fb5f0 100%);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .resource-card.affiliate-links .card-meta {
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .resource-card.affiliate-links:hover {
+            background: linear-gradient(135deg, #dbb599 0%, #83573d 100%);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(219, 181, 153, 0.3);
+        }
+        
+        .resource-card.coming-soon {
+            background: #ffffff;
+            border: 2px solid #e2e8f0;
+            color: #83573d;
+        }
+        
+        .resource-card.coming-soon .card-meta {
+            color: #a0aec0;
+        }
+        
+        .resource-card.coming-soon:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* About Page Layout */
+        .about-profile { display: none; }
+        
+        .about-onebox {
+            display: grid;
+            grid-template-columns: 1fr 280px;
+            gap: 2rem;
+            align-items: start;
+        }
+        
+        .about-onebox-text p + p { margin-top: 1rem; }
+        
+        .about-onebox-photo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        .about-photo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        .about-photo-label {
+            font-family: 'Times New Roman', 'Georgia', 'Playfair Display', serif;
+            color: #7585b9;
+            font-size: 0.95rem;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+        
+        .about-photo img, .about-onebox-photo img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50% / 40%; /* subtle oval */
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            border: 4px solid #ffffff;
+        }
+        
+        .about-photo-caption {
+            font-weight: 600;
+            color: #2d3748;
+        }
+        
+        .about-bio p { margin: 0; }
+        
+        @media (max-width: 768px) {
+            .about-onebox {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .about-photo img, .about-onebox-photo img { width: 180px; height: 180px; }
+        }
+        
+        /* Contact Form Styles */
+        .contact-form-section {
+            background: linear-gradient(135deg, #9fd4fa 0%, #7585b9 100%);
+            color: white;
+            padding: 4rem 0;
+            margin: 0;
+        }
+        
+        .contact-form-section h1 {
+            font-family: 'Times New Roman', 'Georgia', 'Playfair Display', serif;
+            font-size: 3rem;
+            font-weight: 400;
+            color: white;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+            text-align: center;
+        }
+        
+        .contact-subtitle {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.9);
+            text-align: center;
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 16px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: white;
+            font-size: 0.95rem;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.875rem;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.9);
+            color: #2d3748;
+            font-size: 1rem;
+            transition: all 0.2s ease;
+        }
+        
+        /* Disable textarea resize handle */
+        .form-group textarea {
+            resize: none;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #dbb599;
+            background: white;
+            box-shadow: 0 0 0 3px rgba(219, 181, 153, 0.1);
+        }
+        
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: #a0aec0;
+        }
+        
+        .submit-btn {
+            width: 100%;
+            background: #dbb599;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            letter-spacing: 0.025em;
+        }
+        
+        .submit-btn:hover {
+            background: #83573d;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(131, 87, 61, 0.3);
+        }
+        
+        .submit-btn:disabled {
+            background: #a0aec0;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+        
+        .form-status {
+            margin-top: 1rem;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 500;
+        }
+        
+        .form-status.success {
+            background: rgba(72, 187, 120, 0.2);
+            color: #68d391;
+            border: 1px solid rgba(72, 187, 120, 0.3);
+        }
+        
+        .form-status.error {
+            background: rgba(245, 101, 101, 0.2);
+            color: #fc8181;
+            border: 1px solid rgba(245, 101, 101, 0.3);
+        }
+        
+        /* Contact Methods */
+        .contact-methods {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            align-items: stretch;
+            gap: 1.25rem;
+            margin-top: 2rem;
+        }
+        
+        /* Ensure horizontal layout on desktop */
+        @media (min-width: 900px) {
+            .contact-methods {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+            .contact-methods .contact-method {
+                flex: 1 1 0;
+                max-width: 360px;
+            }
+        }
+        
+        .contact-row .contact-method {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        .contact-method .icon {
+            color: #7585b9;
+        }
+        
+        .contact-method {
+            text-align: center;
+            padding: 2rem;
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            transition: all 0.2s ease;
+        }
+        
+        .contact-method:hover {
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+        
+        .contact-method h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-method p {
+            color: #718096;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+        
+        .contact-link {
+            display: inline-block;
+            background: #7585b9;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+        
+        .contact-link:hover {
+            background: #dbb599;
+            transform: translateY(-1px);
+        }
+        
+        .contact-ways-title {
+            text-align: center;
+        }
+        
+        .icon svg {
+            width: 40px;
+            height: 40px;
+        }
+        
+        .icon-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background: #f1f5f9;
+            color: #7585b9;
+            transition: all 0.2s ease;
+        }
+        
+        .icon-link:hover {
+            background: #e2e8f0;
+            color: #83573d;
+            transform: translateY(-2px);
+        }
+        
+        @media (max-width: 768px) {
+            .contact-form-section h1 {
+                font-size: 2.5rem;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-form {
+                padding: 1.5rem;
+            }
+            
+            .contact-methods {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Temporarily hide Resources from navigation */
+        .nav-links > li.dropdown { display: none; }
+        
+        /* Philosophy Page Tiles */
+        .resource-card.philosophy-card {
+            background: #ffffff;
+            border: 2px solid #e2e8f0;
+            color: #83573d;
+            transition: all 0.3s ease;
+        }
+        
+        .resource-card.philosophy-card .card-meta {
+            color: #7585b9;
+        }
+        
+        .resource-card.philosophy-card:nth-child(1):hover {
+            background: #9fd4fa;
+            color: white;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(159, 212, 250, 0.3);
+        }
+        
+        .resource-card.philosophy-card:nth-child(1):hover .card-meta {
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .resource-card.philosophy-card:nth-child(2):hover {
+            background: #7585b9;
+            color: white;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(117, 133, 185, 0.3);
+        }
+        
+        .resource-card.philosophy-card:nth-child(2):hover .card-meta {
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .resource-card.philosophy-card:nth-child(3):hover {
+            background: #b8d1f5;
+            color: white;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(184, 209, 245, 0.3);
+        }
+        
+        .resource-card.philosophy-card:nth-child(3):hover .card-meta {
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .resource-card.philosophy-card:nth-child(4):hover {
+            background: #7fb5f0;
+            color: white;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(127, 181, 240, 0.3);
+        }
+        
+        .resource-card.philosophy-card:nth-child(4):hover .card-meta {
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .container {
+                padding: 0 1rem;
+            }
+            
+            .nav-container {
+                padding: 0 1rem;
+            }
+            
+            .content-section {
+                padding: 1.5rem;
+                margin: 1rem 0;
+            }
+            
+            .content-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+                margin: 2rem 0;
+            }
+            
+            .card-content {
+                padding: 1.25rem;
+            }
+            
+            header {
+                padding: 3rem 0;
+            }
+            
+            main {
+                padding: 3rem 0;
+            }
+            
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                padding: 1rem;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                gap: 1rem;
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .mobile-menu {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="/" class="logo"> Sophia Victoria Kwin, ND </a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about/">About</a></li>
+                <li><a href="/philosophy/">Philosophy</a></li>
+                <li><a href="https://us.fullscript.com/welcome/skwin" target="_blank" rel="noopener noreferrer">Supplements</a></li>
+                <li class="dropdown">
+                    <a href="/resources/" class="dropdown-toggle">Resources</a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-item" data-category="free-guides">
+                            <a href="/resources/free-guides/">Free Guides</a>
+                            <div class="flyout-menu">
+                                <a href="/resources/free-guides/sleep-guide/">Sleep Guide</a>
+                                <a href="/resources/free-guides/grocery-shopping-list/">Grocery Shopping List</a>
+                                <a href="/resources/free-guides/protein-sources/">Protein Sources</a>
+                                <a href="/resources/free-guides/time-prioritization/">Time Prioritization</a>
+                                <a href="https://docs.google.com/document/d/19Om1DKyXBpNPX1cpzjAqdjFiZ66lIYLPY59BqZEcXqM/edit?usp=sharing" target="_blank" rel="noopener noreferrer">How to Vet Supplements</a>
+                            </div>
+                        </div>
+                        <div class="dropdown-item" data-category="premium-guides">
+                            <a href="/resources/premium-guides/">Premium Guides</a>
+                            <div class="flyout-menu">
+                                <a href="/resources/premium-guides/comprehensive-health-audit/">Comprehensive Health Audit</a>
+                                <a href="/resources/premium-guides/hormone-optimization-guide/">Hormone Optimization Guide</a>
+                                <a href="/resources/premium-guides/longevity-blueprint/">Longevity Blueprint</a>
+                                <a href="/resources/premium-guides/performance-protocol/">Performance Protocol</a>
+                            </div>
+                        </div>
+                        <div class="dropdown-item" data-category="educational">
+                            <a href="/resources/educational/">Educational</a>
+                            <div class="flyout-menu">
+                                <a href="/resources/educational/what-are-nds/">What are NDs (and what aren't we)</a>
+                                <a href="/resources/educational/holistic-vs-natural/">Holistic vs Natural</a>
+                                <a href="/resources/educational/what-is-detoxification/">What is detoxification? (and what isn't it)</a>
+                                <a href="/resources/educational/understanding-biomarkers/">Understanding Biomarkers</a>
+                            </div>
+                        </div>
+                        <div class="dropdown-item" data-category="recommended-products">
+                            <a href="/resources/recommended-products/">Recommended Products</a>
+                            <div class="flyout-menu">
+                                <a href="/resources/recommended-products/supplements/">Supplements</a>
+                                <a href="/resources/recommended-products/testing-kits/">Testing Kits</a>
+                                <a href="/resources/recommended-products/wellness-devices/">Wellness Devices</a>
+                                <a href="/resources/recommended-products/books/">Books</a>
+                            </div>
+                        </div>
+                        <div class="dropdown-item" data-category="my-health-blueprint">
+                            <a href="/resources/my-health-blueprint/">My Health Blueprint</a>
+                            <div class="flyout-menu">
+                                <a href="/resources/my-health-blueprint/foundations/">Foundations of Health</a>
+                                <a href="/resources/my-health-blueprint/metabolic-health/">Metabolic Health</a>
+                                <a href="/resources/my-health-blueprint/hormonal-balance/">Hormonal Balance</a>
+                                <a href="/resources/my-health-blueprint/immune-system/">Immune System</a>
+                                <a href="/resources/my-health-blueprint/mental-wellness/">Mental Wellness</a>
+                                <a href="/resources/my-health-blueprint/longevity/">Longevity & Prevention</a>
+                            </div>
+                        </div>
+                        <div class="dropdown-item" data-category="affiliate-links">
+                            <a href="/resources/affiliate-links/">Affiliate Links</a>
+                            <div class="flyout-menu">
+                                <a href="https://marekdiagnostics.com/drkwin" target="_blank" rel="noopener noreferrer">Lab Testing - Marek Health (use code drkwin)</a>
+                                <a href="https://us.fullscript.com/welcome/skwin" target="_blank" rel="noopener noreferrer">FullScript Supplements</a>
+                                <a href="https://www.amazon.com/shop/influencer-ab319d4b" target="_blank" rel="noopener noreferrer">Amazon Storefront</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="/contact/">Contact</a></li>
+                <li class="search-container">
+                    <button class="search-btn" onclick="toggleSearch()">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                    <div class="search-dropdown">
+                        <input type="text" placeholder="Search..." class="search-input">
+                        <div class="search-results"></div>
+                    </div>
+                </li>
+                <li class="social-container">
+                    <a href="https://www.instagram.com/sophie.kwin/" target="_blank" rel="noopener noreferrer" class="social-btn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="m16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                </li>
+                <li class="email-container">
+                    <a href="mailto:sophie@sophiekwin.com" class="email-btn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <button class="mobile-menu" onclick="toggleMenu()">☰</button>
+        </div>
+    </nav>
+    
+    <header>
+        <div class="container">
+            <h1>Mental Wellness - My Health Blueprint</h1>
+            <p class="subtitle">Cognitive optimization, emotional resilience, and neurological health strategies.</p>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <div class="content-section">
+<h2>Mental Wellness: The Foundation of Thriving</h2>
+<p>Mental wellness encompasses far more than the absence of mental illness. It includes cognitive sharpness, emotional resilience, stress management, and the ability to engage fully with life. Your mental health directly impacts your physical health, relationships, and overall quality of life.</p>
+</div>
+<div class="content-grid">
+  <div class="card">
+    <div class="card-image">🧠</div>
+    <div class="card-content">
+      <div class="card-meta">Cognition</div>
+      <h3>Brain Function</h3>
+      <p>Memory, focus, mental clarity, and cognitive performance optimization for peak mental function.</p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">💪</div>
+    <div class="card-content">
+      <div class="card-meta">Resilience</div>
+      <h3>Stress Management</h3>
+      <p>Building adaptive stress responses and emotional resilience for life's challenges.</p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">😊</div>
+    <div class="card-content">
+      <div class="card-meta">Mood</div>
+      <h3>Emotional Balance</h3>
+      <p>Stable mood, emotional regulation, and mental well-being through biochemical optimization.</p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-image">🔗</div>
+    <div class="card-content">
+      <div class="card-meta">Connection</div>
+      <h3>Social Wellness</h3>
+      <p>Healthy relationships, community connection, and social support for mental health.</p>
+    </div>
+  </div>
+</div>
+<div class="content-section">
+<h2>The Mind-Body Connection</h2>
+<p><strong>Your brain is an organ that requires the same foundational support as your heart, liver, or kidneys.</strong> Mental wellness isn't separate from physical health—they're intimately connected through neurotransmitters, hormones, inflammation, and the gut-brain axis.</p>
+<h3>Key Connections:</h3>
+<ul>
+<li><strong>Gut-brain axis:</strong> Microbiome directly affects mood and cognition</li>
+<li><strong>Inflammation:</strong> Chronic inflammation contributes to depression and cognitive decline</li>
+<li><strong>Blood sugar:</strong> Unstable glucose affects mood, focus, and energy</li>
+<li><strong>Hormones:</strong> Thyroid, sex hormones, and stress hormones impact mental function</li>
+<li><strong>Sleep:</strong> Essential for memory consolidation and emotional regulation</li>
+<li><strong>Exercise:</strong> Directly improves mood, cognition, and stress resilience</li>
+</ul>
+<h3>Mental Health Red Flags:</h3>
+<ul>
+<li><strong>Persistent low mood</strong> lasting more than 2 weeks</li>
+<li><strong>Anxiety</strong> that interferes with daily activities</li>
+<li><strong>Cognitive changes:</strong> Memory loss, confusion, difficulty concentrating</li>
+<li><strong>Sleep disturbances:</strong> Insomnia, frequent waking, unrefreshing sleep</li>
+<li><strong>Social withdrawal:</strong> Isolation from friends, family, and activities</li>
+<li><strong>Substance dependence:</strong> Using alcohol, drugs, or other substances to cope</li>
+</ul>
+<p><em>Note: If you're experiencing any of these symptoms, please seek professional help. This information is educational and not a substitute for mental health treatment.</em></p>
+</div>
+<div class="content-section">
+<h2>Nutritional Neuroscience</h2>
+<p><strong>Your brain consumes 20% of your daily calories despite being only 2% of your body weight.</strong> The quality of fuel you provide directly impacts cognitive function, mood stability, and mental energy.</p>
+<h3>Brain-Essential Nutrients:</h3>
+<h4>Omega-3 Fatty Acids:</h4>
+<ul>
+<li><strong>Functions:</strong> Brain structure, inflammation regulation, neurotransmitter function</li>
+<li><strong>Key types:</strong> DHA (brain structure), EPA (mood regulation)</li>
+<li><strong>Sources:</strong> Fatty fish, algae supplements</li>
+<li><strong>Optimal ratio:</strong> 2:1 EPA:DHA for mood, 1:2 for cognition</li>
+</ul>
+<h4>B-Vitamins:</h4>
+<ul>
+<li><strong>B6, B12, Folate:</strong> Neurotransmitter production, methylation</li>
+<li><strong>B1 (Thiamine):</strong> Brain energy metabolism</li>
+<li><strong>Sources:</strong> Leafy greens, meat, eggs, legumes</li>
+<li><strong>Note:</strong> Deficiencies common, especially B12 in vegetarians</li>
+</ul>
+<h4>Magnesium:</h4>
+<ul>
+<li><strong>Functions:</strong> Neural transmission, stress response, sleep</li>
+<li><strong>Deficiency signs:</strong> Anxiety, muscle tension, sleep issues</li>
+<li><strong>Sources:</strong> Dark leafy greens, nuts, seeds, dark chocolate</li>
+<li><strong>Forms:</strong> Glycinate for relaxation, L-threonate for cognitive function</li>
+</ul>
+<h4>Amino Acids:</h4>
+<ul>
+<li><strong>Tryptophan:</strong> Serotonin precursor (turkey, eggs, cheese)</li>
+<li><strong>Tyrosine:</strong> Dopamine precursor (almonds, avocados, bananas)</li>
+<li><strong>GABA:</strong> Calming neurotransmitter (fermented foods)</li>
+<li><strong>Glycine:</strong> Sleep and stress support (bone broth, gelatin)</li>
+</ul>
+<h3>Foods for Mental Wellness:</h3>
+<h4>Mood-Supporting Foods:</h4>
+<ul>
+<li><strong>Dark chocolate:</strong> Polyphenols, magnesium, mood enhancement</li>
+<li><strong>Berries:</strong> Antioxidants for brain protection</li>
+<li><strong>Fatty fish:</strong> Omega-3s for mood regulation</li>
+<li><strong>Fermented foods:</strong> Gut-brain axis support</li>
+<li><strong>Leafy greens:</strong> Folate, magnesium, B-vitamins</li>
+</ul>
+<h4>Cognitive Enhancement:</h4>
+<ul>
+<li><strong>Walnuts:</strong> Omega-3s, vitamin E</li>
+<li><strong>Blueberries:</strong> Anthocyanins for memory</li>
+<li><strong>Avocados:</strong> Monounsaturated fats for brain health</li>
+<li><strong>Eggs:</strong> Choline for neurotransmitter production</li>
+<li><strong>Green tea:</strong> L-theanine for calm focus</li>
+</ul>
+</div>
+<div class="content-section">
+<h2>Stress Resilience &amp; Emotional Regulation</h2>
+<p><strong>Stress isn't the problem—it's our response to stress that determines our health outcomes.</strong> Building stress resilience allows you to navigate challenges while maintaining mental clarity and emotional balance.</p>
+<h3>Understanding Stress Response:</h3>
+<h4>Acute Stress (Healthy):</h4>
+<ul>
+<li><strong>Short-term activation:</strong> Fight-or-flight response</li>
+<li><strong>Quick recovery:</strong> Return to baseline within hours</li>
+<li><strong>Adaptive:</strong> Improves performance and memory</li>
+<li><strong>Examples:</strong> Exercise, public speaking, exciting challenges</li>
+</ul>
+<h4>Chronic Stress (Problematic):</h4>
+<ul>
+<li><strong>Persistent activation:</strong> Stress response stays &quot;on&quot;</li>
+<li><strong>No recovery:</strong> Constantly elevated stress hormones</li>
+<li><strong>Maladaptive:</strong> Impairs memory, mood, and health</li>
+<li><strong>Examples:</strong> Work pressure, relationship conflicts, financial stress</li>
+</ul>
+<h3>Building Stress Resilience:</h3>
+<h4>Breathing Practices:</h4>
+<ul>
+<li><strong>Box breathing:</strong> 4-4-4-4 count for immediate calm</li>
+<li><strong>Physiological sigh:</strong> Double inhale, long exhale</li>
+<li><strong>Coherent breathing:</strong> 5 seconds in, 5 seconds out</li>
+<li><strong>Regular practice:</strong> 5-10 minutes daily builds resilience</li>
+</ul>
+<h4>Mindfulness &amp; Meditation:</h4>
+<ul>
+<li><strong>Start small:</strong> 5 minutes daily</li>
+<li><strong>Consistency over duration:</strong> Daily practice more important than long sessions</li>
+<li><strong>Types:</strong> Mindfulness, loving-kindness, body scan</li>
+<li><strong>Apps:</strong> Consider guided meditation apps for beginners</li>
+</ul>
+<h4>Cognitive Strategies:</h4>
+<ul>
+<li><strong>Reframing:</strong> Look for learning opportunities in challenges</li>
+<li><strong>Perspective:</strong> Ask &quot;Will this matter in 5 years?&quot;</li>
+<li><strong>Acceptance:</strong> Focus on what you can control</li>
+<li><strong>Gratitude practice:</strong> Three things daily</li>
+</ul>
+</div>
+<div class="content-section">
+<h2>Sleep &amp; Mental Health</h2>
+<p><strong>Sleep is when your brain detoxifies, consolidates memories, and processes emotions.</strong> Poor sleep is both a symptom and a cause of mental health issues.</p>
+<h3>Sleep's Mental Health Functions:</h3>
+<ul>
+<li><strong>Memory consolidation:</strong> Converting short-term to long-term memory</li>
+<li><strong>Emotional processing:</strong> Working through daily experiences</li>
+<li><strong>Brain detoxification:</strong> Clearing metabolic waste and toxins</li>
+<li><strong>Neurotransmitter regulation:</strong> Balancing mood-regulating chemicals</li>
+</ul>
+<h3>Sleep Optimization for Mental Health:</h3>
+<h4>Sleep Hygiene:</h4>
+<ul>
+<li><strong>Consistent schedule:</strong> Same bedtime and wake time daily</li>
+<li><strong>Dark environment:</strong> Blackout curtains, eye masks</li>
+<li><strong>Cool temperature:</strong> 65-68°F for optimal sleep</li>
+<li><strong>Quiet space:</strong> Earplugs or white noise if needed</li>
+</ul>
+<h4>Pre-Sleep Routine:</h4>
+<ul>
+<li><strong>Wind down:</strong> 1-2 hours before bed</li>
+<li><strong>No screens:</strong> Blue light disrupts melatonin</li>
+<li><strong>Relaxing activities:</strong> Reading, bath, gentle stretching</li>
+<li><strong>Avoid stimulants:</strong> Caffeine after 2 PM, alcohol before bed</li>
+</ul>
+<h4>Morning Light:</h4>
+<ul>
+<li><strong>Natural light:</strong> 10-15 minutes within 1 hour of waking</li>
+<li><strong>Consistent timing:</strong> Helps set circadian rhythm</li>
+<li><strong>Outdoor preferred:</strong> Even cloudy days provide beneficial light</li>
+<li><strong>Light therapy:</strong> Consider if natural light insufficient</li>
+</ul>
+<p><em>Related: <a href="/resources/free-guides/sleep-guide/">Sleep Optimization Guide</a> for comprehensive sleep strategies</em></p>
+</div>
+<div class="content-section">
+<h2>Exercise &amp; Mental Health</h2>
+<p><strong>Exercise is as effective as medication for mild to moderate depression and anxiety.</strong> Physical activity directly improves mood, cognition, and stress resilience through multiple mechanisms.</p>
+<h3>Mental Health Benefits of Exercise:</h3>
+<ul>
+<li><strong>Neurotransmitter production:</strong> Increases serotonin, dopamine, norepinephrine</li>
+<li><strong>BDNF (Brain-Derived Neurotrophic Factor):</strong> Promotes brain plasticity and growth</li>
+<li><strong>Stress hormone regulation:</strong> Reduces cortisol, improves stress response</li>
+<li><strong>Improved sleep:</strong> Better sleep quality and duration</li>
+<li><strong>Self-efficacy:</strong> Builds confidence and sense of accomplishment</li>
+</ul>
+<h3>Types of Exercise for Mental Health:</h3>
+<h4>Aerobic Exercise:</h4>
+<ul>
+<li><strong>Benefits:</strong> Mood improvement, anxiety reduction, cognitive enhancement</li>
+<li><strong>Intensity:</strong> Moderate intensity most beneficial</li>
+<li><strong>Duration:</strong> 30 minutes, 3-5 times per week</li>
+<li><strong>Examples:</strong> Walking, swimming, cycling, dancing</li>
+</ul>
+<h4>Strength Training:</h4>
+<ul>
+<li><strong>Benefits:</strong> Confidence, body image, stress resilience</li>
+<li><strong>Frequency:</strong> 2-3 times per week</li>
+<li><strong>Focus:</strong> Progressive overload, compound movements</li>
+<li><strong>Mental aspect:</strong> Builds discipline and mental toughness</li>
+</ul>
+<h4>Mind-Body Exercise:</h4>
+<ul>
+<li><strong>Yoga:</strong> Combines movement, breathing, and mindfulness</li>
+<li><strong>Tai Chi:</strong> Gentle movement with meditation aspects</li>
+<li><strong>Qigong:</strong> Energy cultivation and stress reduction</li>
+<li><strong>Benefits:</strong> Stress reduction, body awareness, emotional regulation</li>
+</ul>
+<h4>Outdoor Exercise:</h4>
+<ul>
+<li><strong>Nature benefits:</strong> Additional mental health benefits from green spaces</li>
+<li><strong>Vitamin D:</strong> Sun exposure supports mood</li>
+<li><strong>Fresh air:</strong> Improves oxygen delivery to brain</li>
+<li><strong>Grounding:</strong> Connection to nature reduces stress</li>
+</ul>
+</div>
+<div class="content-section">
+<h2>Social Connection &amp; Mental Wellness</h2>
+<p><strong>Humans are social beings.</strong> Strong social connections are one of the most important predictors of mental health, longevity, and life satisfaction.</p>
+<h3>Benefits of Social Connection:</h3>
+<ul>
+<li><strong>Stress buffering:</strong> Social support reduces stress response</li>
+<li><strong>Purpose and meaning:</strong> Feeling valued and needed</li>
+<li><strong>Emotional regulation:</strong> Others help us process emotions</li>
+<li><strong>Cognitive stimulation:</strong> Social interaction keeps brain active</li>
+<li><strong>Behavioral support:</strong> Others encourage healthy habits</li>
+</ul>
+<h3>Building Social Wellness:</h3>
+<h4>Quality over Quantity:</h4>
+<ul>
+<li><strong>Deep connections:</strong> Few close relationships better than many superficial ones</li>
+<li><strong>Vulnerability:</strong> Sharing authentic self deepens relationships</li>
+<li><strong>Regular contact:</strong> Consistent interaction maintains bonds</li>
+<li><strong>Mutual support:</strong> Give and receive support equally</li>
+</ul>
+<h4>Community Involvement:</h4>
+<ul>
+<li><strong>Volunteer work:</strong> Serves others while building connections</li>
+<li><strong>Interest groups:</strong> Join activities you genuinely enjoy</li>
+<li><strong>Religious/spiritual communities:</strong> If aligned with your beliefs</li>
+<li><strong>Professional networks:</strong> Career-focused social connections</li>
+</ul>
+<h4>Digital Balance:</h4>
+<ul>
+<li><strong>Limit social media:</strong> Can increase comparison and isolation</li>
+<li><strong>Video calls:</strong> Better than text for maintaining distant relationships</li>
+<li><strong>In-person priority:</strong> Face-to-face interaction most beneficial</li>
+<li><strong>Digital detox:</strong> Regular breaks from technology</li>
+</ul>
+</div>
+<div class="content-section">
+<h2>Cognitive Optimization</h2>
+<p><strong>Your brain has the capacity to grow and change throughout life.</strong> Neuroplasticity allows you to improve cognitive function, build new skills, and enhance mental performance at any age.</p>
+<h3>Key Cognitive Domains:</h3>
+<h4>Memory:</h4>
+<ul>
+<li><strong>Working memory:</strong> Holding information temporarily</li>
+<li><strong>Long-term memory:</strong> Storage and retrieval of information</li>
+<li><strong>Enhancement strategies:</strong> Spaced repetition, sleep, exercise, nutrition</li>
+</ul>
+<h4>Attention &amp; Focus:</h4>
+<ul>
+<li><strong>Sustained attention:</strong> Maintaining focus over time</li>
+<li><strong>Selective attention:</strong> Filtering relevant from irrelevant information</li>
+<li><strong>Training:</strong> Meditation, single-tasking, removing distractions</li>
+</ul>
+<h4>Executive Function:</h4>
+<ul>
+<li><strong>Planning:</strong> Organizing and sequencing tasks</li>
+<li><strong>Decision-making:</strong> Weighing options and choosing actions</li>
+<li><strong>Impulse control:</strong> Resisting immediate gratification</li>
+<li><strong>Support:</strong> Adequate sleep, stress management, regular exercise</li>
+</ul>
+<h3>Cognitive Enhancement Strategies:</h3>
+<h4>Learning &amp; Challenge:</h4>
+<ul>
+<li><strong>Novel activities:</strong> Learning new skills builds neural pathways</li>
+<li><strong>Progressive difficulty:</strong> Gradual increase in challenge</li>
+<li><strong>Variety:</strong> Different types of mental stimulation</li>
+<li><strong>Examples:</strong> Languages, instruments, puzzles, new sports</li>
+</ul>
+<h4>Mental Training:</h4>
+<ul>
+<li><strong>Meditation:</strong> Improves attention and emotional regulation</li>
+<li><strong>Dual n-back:</strong> Working memory training</li>
+<li><strong>Speed of processing:</strong> Timed cognitive tasks</li>
+<li><strong>Memory palace:</strong> Spatial memory techniques</li>
+</ul>
+</div>
+<div class="content-section">
+<h2>Mental Wellness Assessment</h2>
+<h3>Self-Assessment Areas:</h3>
+<ol>
+<li><strong>Mood stability:</strong> Do you experience consistent, stable moods?</li>
+<li><strong>Stress resilience:</strong> How well do you handle life's challenges?</li>
+<li><strong>Cognitive function:</strong> Are you sharp, focused, and mentally clear?</li>
+<li><strong>Sleep quality:</strong> Do you wake up refreshed and mentally alert?</li>
+<li><strong>Social connections:</strong> Do you feel supported and connected?</li>
+<li><strong>Life satisfaction:</strong> Do you find meaning and joy in your life?</li>
+</ol>
+<h3>Professional Assessment:</h3>
+<ul>
+<li><strong>Mental health screening:</strong> Depression, anxiety inventories</li>
+<li><strong>Cognitive testing:</strong> Memory, attention, processing speed</li>
+<li><strong>Stress assessment:</strong> Cortisol patterns, HRV</li>
+<li><strong>Nutritional status:</strong> B-vitamins, omega-3s, vitamin D</li>
+</ul>
+<h3>Red Flags Requiring Professional Help:</h3>
+<ul>
+<li>Persistent mood changes lasting more than 2 weeks</li>
+<li>Thoughts of self-harm or suicide</li>
+<li>Inability to function in daily activities</li>
+<li>Substance abuse or dependency</li>
+<li>Severe anxiety or panic attacks</li>
+<li>Significant cognitive changes or memory loss</li>
+</ul>
+</div>
+<div class="content-section">
+<h2>Creating Your Mental Wellness Plan</h2>
+<h3>Phase 1: Foundation (Weeks 1-4)</h3>
+<ul>
+<li>Optimize sleep quality and consistency</li>
+<li>Begin regular exercise routine</li>
+<li>Start basic stress management practices</li>
+<li>Assess and address nutritional deficiencies</li>
+</ul>
+<h3>Phase 2: Skill Building (Weeks 5-8)</h3>
+<ul>
+<li>Develop meditation or mindfulness practice</li>
+<li>Strengthen social connections</li>
+<li>Add cognitive challenges and learning</li>
+<li>Refine stress management techniques</li>
+</ul>
+<h3>Phase 3: Integration (Weeks 9-12)</h3>
+<ul>
+<li>Combine multiple wellness strategies</li>
+<li>Personalize based on what works best</li>
+<li>Build long-term sustainable habits</li>
+<li>Create support systems and accountability</li>
+</ul>
+<h3>Phase 4: Optimization</h3>
+<ul>
+<li>Advanced cognitive training if desired</li>
+<li>Periodic mental health check-ins</li>
+<li>Adjust strategies for life changes</li>
+<li>Maintain preventive practices</li>
+</ul>
+</div>
+<div class="cta-section">
+  <h2>Need Professional Mental Health Support?</h2>
+  <p>Get comprehensive assessment and personalized mental wellness optimization</p>
+  <a href="/contact/" class="btn">Get In Touch</a>
+</div>
+<div class="content-section">
+<h2>Related Resources</h2>
+<ul>
+<li><strong><a href="/resources/my-health-blueprint/foundations/">Foundations of Health</a></strong> - Sleep, nutrition, and exercise basics for mental health</li>
+<li><strong><a href="/resources/my-health-blueprint/hormonal-balance/">Hormonal Balance</a></strong> - How hormones affect mood and cognition</li>
+<li><strong><a href="/resources/free-guides/sleep-guide/">Sleep Optimization Guide</a></strong> - Detailed sleep strategies for mental wellness</li>
+<li><strong><a href="/resources/free-guides/stress-management/">Stress Management Tools</a></strong> - Practical stress reduction techniques</li>
+</ul>
+</div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/sophia-kwin" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://www.instagram.com/sophie.kwin/" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="m16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                        <span>Instagram</span>
+                    </a>
+                </div>
+                <p>&copy; 2024 Sophie's Website. Built with 11ty.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Add contact page class to body
+        if (window.location.pathname === '/contact/' || window.location.pathname === '/contact') {
+            document.body.classList.add('contact-page');
+        }
+        
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+        
+        function toggleSearch() {
+            const searchDropdown = document.querySelector('.search-dropdown');
+            searchDropdown.classList.toggle('active');
+            if (searchDropdown.classList.contains('active')) {
+                setTimeout(() => {
+                    document.querySelector('.search-input').focus();
+                }, 100);
+            }
+        }
+        
+        // Close search dropdown when clicking outside
+        document.addEventListener('click', function(event) {
+            const searchContainer = document.querySelector('.search-container');
+            const searchDropdown = document.querySelector('.search-dropdown');
+            
+            if (!searchContainer.contains(event.target)) {
+                searchDropdown.classList.remove('active');
+            }
+        });
+        
+        // Keep search dropdown open on hover
+        document.addEventListener('mouseover', function(event) {
+            const searchContainer = document.querySelector('.search-container');
+            const searchDropdown = document.querySelector('.search-dropdown');
+            
+            if (searchContainer.contains(event.target)) {
+                searchDropdown.classList.add('active');
+            }
+        });
+        
+        document.addEventListener('mouseout', function(event) {
+            const searchContainer = document.querySelector('.search-container');
+            const searchDropdown = document.querySelector('.search-dropdown');
+            
+            if (!searchContainer.contains(event.target)) {
+                // Only close if not actively typing
+                const searchInput = document.querySelector('.search-input');
+                if (!searchInput.matches(':focus')) {
+                    searchDropdown.classList.remove('active');
+                }
+            }
+        });
+        
+        // Search functionality with dropdown suggestions
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.querySelector('.search-input');
+            const searchResults = document.querySelector('.search-results');
+            const searchDropdown = document.querySelector('.search-dropdown');
+            
+            // Search data - this would ideally be generated from your site content
+            const searchData = [
+                { title: "About", description: "Learn about Dr. Sophia Kwin's background and approach", url: "/about/", keywords: ["about", "doctor", "background", "story"] },
+                { title: "Philosophy", description: "Dr. Kwin's approach to Medicine 3.0 and health optimization", url: "/philosophy/", keywords: ["philosophy", "medicine", "approach", "health", "optimization"] },
+                { title: "Resources", description: "Free guides, premium content, and educational materials", url: "/resources/", keywords: ["resources", "guides", "education", "content"] },
+                { title: "Free Guides", description: "Complimentary health guides and practical tools", url: "/resources/free-guides/", keywords: ["free", "guides", "complimentary", "tools"] },
+                { title: "Premium Guides", description: "Comprehensive protocols for serious health optimization", url: "/resources/premium-guides/", keywords: ["premium", "guides", "protocols", "optimization"] },
+                { title: "Educational Content", description: "Evidence-based articles on naturopathic medicine", url: "/resources/educational/", keywords: ["educational", "articles", "naturopathic", "medicine"] },
+                { title: "Recommended Products", description: "Personally selected supplements and wellness devices", url: "/resources/recommended-products/", keywords: ["products", "supplements", "devices", "recommended"] },
+                { title: "My Health Blueprint", description: "Comprehensive framework for understanding your health", url: "/resources/my-health-blueprint/", keywords: ["blueprint", "framework", "health", "comprehensive"] },
+                { title: "Contact", description: "Get in touch with Dr. Sophia Kwin", url: "/contact/", keywords: ["contact", "get in touch", "email", "reach out"] },
+                { title: "Sleep Guide", description: "Comprehensive sleep assessment and optimization", url: "/resources/free-guides/sleep-guide/", keywords: ["sleep", "rest", "optimization", "assessment"] },
+                { title: "Grocery Shopping List", description: "Healthy food recommendations and shopping guide", url: "/resources/free-guides/grocery-shopping-list/", keywords: ["grocery", "shopping", "food", "nutrition"] },
+                { title: "Protein Sources", description: "Complete guide to protein sources and requirements", url: "/resources/free-guides/protein-sources/", keywords: ["protein", "nutrition", "muscle", "sources"] },
+                { title: "Time Prioritization", description: "Strategies for managing time and priorities", url: "/resources/free-guides/time-prioritization/", keywords: ["time", "priorities", "management", "productivity"] },
+                { title: "Comprehensive Health Audit", description: "Complete health assessment and optimization protocol", url: "/resources/premium-guides/comprehensive-health-audit/", keywords: ["audit", "assessment", "comprehensive", "health"] },
+                { title: "Hormone Optimization Guide", description: "Bioidentical hormone replacement therapy guide", url: "/resources/premium-guides/hormone-optimization-guide/", keywords: ["hormones", "optimization", "bHRT", "bioidentical"] },
+                { title: "Foundations of Health", description: "Core principles for optimal health and wellness", url: "/resources/my-health-blueprint/foundations/", keywords: ["foundations", "principles", "core", "health"] },
+                { title: "Metabolic Health", description: "Understanding and optimizing your metabolism", url: "/resources/my-health-blueprint/metabolic-health/", keywords: ["metabolic", "metabolism", "health", "optimization"] },
+                { title: "Hormonal Balance", description: "Achieving and maintaining hormonal equilibrium", url: "/resources/my-health-blueprint/hormonal-balance/", keywords: ["hormonal", "balance", "hormones", "equilibrium"] },
+                { title: "Immune System", description: "Supporting and optimizing immune function", url: "/resources/my-health-blueprint/immune-system/", keywords: ["immune", "system", "immunity", "function"] },
+                { title: "Mental Wellness", description: "Holistic approach to mental health and wellbeing", url: "/resources/my-health-blueprint/mental-wellness/", keywords: ["mental", "wellness", "health", "wellbeing"] },
+                { title: "Longevity & Prevention", description: "Strategies for healthy aging and disease prevention", url: "/resources/my-health-blueprint/longevity/", keywords: ["longevity", "prevention", "aging", "disease"] }
+            ];
+            
+            if (searchInput) {
+                let searchTimeout;
+                
+                searchInput.addEventListener('input', function() {
+                    clearTimeout(searchTimeout);
+                    const query = this.value.trim().toLowerCase();
+                    
+                    if (query.length === 0) {
+                        searchResults.innerHTML = '';
+                        return;
+                    }
+                    
+                    searchTimeout = setTimeout(() => {
+                        const results = searchData.filter(item => {
+                            return item.title.toLowerCase().includes(query) ||
+                                   item.description.toLowerCase().includes(query) ||
+                                   item.keywords.some(keyword => keyword.toLowerCase().includes(query));
+                        }).slice(0, 8); // Limit to 8 results
+                        
+                        displaySearchResults(results);
+                    }, 150);
+                });
+                
+                searchInput.addEventListener('keypress', function(e) {
+                    if (e.key === 'Enter') {
+                        const query = this.value.trim();
+                        if (query) {
+                            const results = searchData.filter(item => {
+                                return item.title.toLowerCase().includes(query.toLowerCase()) ||
+                                       item.description.toLowerCase().includes(query.toLowerCase()) ||
+                                       item.keywords.some(keyword => keyword.toLowerCase().includes(query.toLowerCase()));
+                            });
+                            
+                            if (results.length > 0) {
+                                window.location.href = results[0].url;
+                            }
+                        }
+                    }
+                });
+                
+                function displaySearchResults(results) {
+                    if (results.length === 0) {
+                        searchResults.innerHTML = '<div class="search-result-item"><div class="search-result-title">No results found</div></div>';
+                        return;
+                    }
+                    
+                    searchResults.innerHTML = results.map(result => `
+                        <div class="search-result-item" onclick="window.location.href='${result.url}'">
+                            <div class="search-result-title">${result.title}</div>
+                            <div class="search-result-description">${result.description}</div>
+                            <div class="search-result-url">${result.url}</div>
+                        </div>
+                    `).join('');
+                }
+            }
+        });
+        
+        // Contact Form Submission (handled by FormSubmit via HTML form action)
+        // We keep a light enhancement for showing a message after redirect back with ?sent=1
+        document.addEventListener('DOMContentLoaded', function() {
+            const params = new URLSearchParams(window.location.search);
+            if (params.get('sent') === '1') {
+                const formStatus = document.getElementById('formStatus');
+                if (formStatus) {
+                    formStatus.classList.add('success');
+                    formStatus.textContent = 'Your message has been sent.';
+                    formStatus.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }
+        });
+    </script>
+</body>
+</html>
