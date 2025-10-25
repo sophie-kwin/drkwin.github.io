@@ -14,7 +14,7 @@ subtitle: Let's connect and start your health journey together.
       <input type="hidden" name="_subject" value="New Contact from sophiekwin.com" />
       <input type="hidden" name="_template" value="table" />
       <input type="hidden" name="_captcha" value="false" />
-      <input type="hidden" name="_next" value="/contact/?sent=1" />
+      <input type="hidden" name="_next" value="/drkwin.github.io/contact/?sent=1" />
       
       <div class="form-row">
         <div class="form-group">
